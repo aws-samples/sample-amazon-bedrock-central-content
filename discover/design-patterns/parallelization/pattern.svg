@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="800" height="320">
+  <rect x="0" y="0" width="800" height="320" fill="#ffffff"/>
+  
+  <!-- Input Task -->
+  <rect x="30" y="130" width="100" height="60" rx="8" fill="#e9ecef" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="80" y="155" font-family="sans-serif" font-size="13" fill="#1e1e1e" text-anchor="middle">Complex</text>
+  <text x="80" y="172" font-family="sans-serif" font-size="13" fill="#1e1e1e" text-anchor="middle">Task</text>
+  
+  <!-- Splitter -->
+  <rect x="180" y="130" width="80" height="60" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="220" y="165" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Splitter</text>
+  
+  <!-- Parallel Workers -->
+  <ellipse cx="400" cy="60" rx="70" ry="35" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="400" y="65" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Worker 1</text>
+  
+  <ellipse cx="400" cy="160" rx="70" ry="35" fill="#74c0fc" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="400" y="165" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Worker 2</text>
+  
+  <ellipse cx="400" cy="260" rx="70" ry="35" fill="#d0bfff" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="400" y="265" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Worker N</text>
+  
+  <!-- Dots indicating more workers -->
+  <text x="400" y="115" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">...</text>
+  <text x="400" y="215" font-family="sans-serif" font-size="16" fill="#666" text-anchor="middle">...</text>
+  
+  <!-- Aggregator -->
+  <rect x="540" y="130" width="90" height="60" rx="8" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="585" y="165" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Aggregator</text>
+  
+  <!-- Output -->
+  <rect x="680" y="130" width="90" height="60" rx="8" fill="#e9ecef" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="725" y="155" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Combined</text>
+  <text x="725" y="172" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Result</text>
+  
+  <!-- Arrows: Input to Splitter -->
+  <path d="M 130 160 L 170 160" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  
+  <!-- Arrows: Splitter to Workers -->
+  <path d="M 260 140 L 320 70" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  <path d="M 260 160 L 320 160" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  <path d="M 260 180 L 320 250" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  
+  <!-- Arrows: Workers to Aggregator -->
+  <path d="M 470 70 L 530 140" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  <path d="M 470 160 L 530 160" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  <path d="M 470 250 L 530 180" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  
+  <!-- Arrow: Aggregator to Output -->
+  <path d="M 630 160 L 670 160" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead5)"/>
+  
+  <!-- Labels -->
+  <text x="290" y="95" font-family="sans-serif" font-size="10" fill="#1e1e1e" text-anchor="middle">parallel</text>
+  <text x="500" y="95" font-family="sans-serif" font-size="10" fill="#1e1e1e" text-anchor="middle">collect</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead5" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>

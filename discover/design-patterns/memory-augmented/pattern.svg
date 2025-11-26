@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <rect x="0" y="0" width="800" height="300" fill="#ffffff"/>
+  
+  <!-- Agent Circle -->
+  <ellipse cx="150" cy="150" rx="80" ry="80" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="150" y="155" font-family="sans-serif" font-size="18" fill="#1e1e1e" text-anchor="middle">Agent (LLM)</text>
+  
+  <!-- Short-term Memory -->
+  <rect x="320" y="40" width="140" height="80" rx="10" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="390" y="75" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Short-term</text>
+  <text x="390" y="95" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Memory</text>
+  
+  <!-- Long-term Memory -->
+  <rect x="320" y="180" width="140" height="80" rx="10" fill="#d0bfff" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="390" y="215" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Long-term</text>
+  <text x="390" y="235" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Memory</text>
+  
+  <!-- User/Input -->
+  <ellipse cx="650" cy="150" rx="80" ry="80" fill="#74c0fc" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="650" y="155" font-family="sans-serif" font-size="18" fill="#1e1e1e" text-anchor="middle">User</text>
+  
+  <!-- Arrows: Agent to Short-term Memory -->
+  <path d="M 220 100 L 310 80" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows: Short-term Memory to Agent -->
+  <path d="M 310 100 L 220 120" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows: Agent to Long-term Memory -->
+  <path d="M 220 200 L 310 220" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows: Long-term Memory to Agent -->
+  <path d="M 310 200 L 220 180" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows: User to Agent -->
+  <path d="M 570 130 L 240 130" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Arrows: Agent to User -->
+  <path d="M 240 170 L 570 170" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead)"/>
+  
+  <!-- Labels -->
+  <text x="400" y="125" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Query</text>
+  <text x="400" y="185" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Response</text>
+  <text x="260" y="75" font-family="sans-serif" font-size="11" fill="#1e1e1e" text-anchor="middle">retrieve</text>
+  <text x="260" y="235" font-family="sans-serif" font-size="11" fill="#1e1e1e" text-anchor="middle">store</text>
+  
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e1e1e"/>
+    </marker>
+  </defs>
+</svg>

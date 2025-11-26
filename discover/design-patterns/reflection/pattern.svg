@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 300" width="700" height="300">
+  <rect x="0" y="0" width="700" height="300" fill="#ffffff"/>
+  
+  <!-- Input -->
+  <rect x="30" y="115" width="80" height="60" rx="8" fill="#e9ecef" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="70" y="150" font-family="sans-serif" font-size="13" fill="#1e1e1e" text-anchor="middle">Request</text>
+  
+  <!-- Generator -->
+  <ellipse cx="220" cy="145" rx="75" ry="50" fill="#b2f2bb" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="220" y="140" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Generator</text>
+  <text x="220" y="158" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">(LLM)</text>
+  
+  <!-- Evaluator -->
+  <ellipse cx="420" cy="145" rx="75" ry="50" fill="#74c0fc" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="420" y="140" font-family="sans-serif" font-size="14" fill="#1e1e1e" text-anchor="middle">Evaluator</text>
+  <text x="420" y="158" font-family="sans-serif" font-size="12" fill="#666" text-anchor="middle">(Critic)</text>
+  
+  <!-- Output -->
+  <rect x="580" y="115" width="90" height="60" rx="8" fill="#e9ecef" stroke="#1e1e1e" stroke-width="2"/>
+  <text x="625" y="140" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Refined</text>
+  <text x="625" y="158" font-family="sans-serif" font-size="12" fill="#1e1e1e" text-anchor="middle">Output</text>
+  
+  <!-- Arrows: Input to Generator -->
+  <path d="M 110 145 L 135 145" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead8)"/>
+  
+  <!-- Arrow: Generator to Evaluator -->
+  <path d="M 295 130 L 335 130" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead8)"/>
+  <text x="315" y="120" font-family="sans-serif" font-size="10" fill="#1e1e1e" text-anchor="middle">output</text>
+  
+  <!-- Arrow: Evaluator to Output (approved) -->
+  <path d="M 495 145 L 570 145" stroke="#1e1e1e" stroke-width="2" fill="none" marker-end="url(#arrowhead8)"/>
+  <text x="532" y="135" font-family="sans-serif" font-size="10" fill="#1e1e1e" text-anchor="middle">approved</text>
+  
+  <!-- Feedback Loop: Evaluator back to Generator -->
+  <path d="M 380 195 C 380 250 260 250 260 195" stroke="#ffd8a8" stroke-width="3" fill="none" marker-end="url(#arrowhead8)"/>
+  <text x="320" y="265" font-family="sans-serif" font-size="11" fill="#1e1e1e" text-anchor="middle">feedback</text>
+  <text x="320" y="280" font-family="sans-serif" font-size="10" fill="#666" text-anchor="middle">(iterate)</text>
+  
+  <!-- Iteration indicator -->
+  <rect x="290" y="220" width="60" height="25" rx="5" fill="#ffd8a8" stroke="#1e1e1e" stroke-width="1"/>
+  <text x="320" y="237" font-family="sans-serif" font-size="10" fill="#1e1e1e" text-anchor="middle">refine</text>
+  
+  <!-- Quality check indicator on evaluator -->
+  <text x="420" y="75" font-family="sans-serif" font-size="10" fill="#666" text-anchor="middle">quality check</text>
+  <path d="M 420 85 L 420 95" stroke="#666" stroke-width="1" fill="none" marker-end="url(#arrowhead8small)"/>
+  
+  <!-- Arrow marker definitions -->
+  <defs>
+    <marker id="arrowhead8" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#1e1e1e"/>
+    </marker>
+    <marker id="arrowhead8small" markerWidth="6" markerHeight="4" refX="5" refY="2" orient="auto">
+      <polygon points="0 0, 6 2, 0 4" fill="#666"/>
+    </marker>
+  </defs>
+</svg>
