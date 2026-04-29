@@ -103,6 +103,11 @@ pnpm-lock.yaml
 .claude/*
 .cursor
 .cursor/*
+.kiro
+.kiro/*
+
+# Build folder OS files
+build/.DS_Store
 
 # Debug
 debug/
