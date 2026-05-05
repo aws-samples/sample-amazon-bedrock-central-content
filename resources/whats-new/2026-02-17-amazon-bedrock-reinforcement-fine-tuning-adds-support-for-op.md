@@ -1,0 +1,8 @@
+---
+title: "Amazon Bedrock reinforcement fine-tuning adds support for open-weight models with OpenAI-compatible APIs"
+description: "Amazon Bedrock reinforcement fine-tuning adds support for open-weight models with OpenAI-compatible APIs"
+url: https://aws.amazon.com/about-aws/whats-new/2026/02/amazon-bedrock-reinforcement-fine-tuning-openai
+date: '2026-02-17'
+services:
+- Amazon Bedrock
+---
