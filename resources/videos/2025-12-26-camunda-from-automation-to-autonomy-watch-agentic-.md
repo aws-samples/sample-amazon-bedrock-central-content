@@ -10,6 +10,6 @@ services:
   - "Amazon OpenSearch"
 topics:
   - "multi-agent"
-  - "enterprise"
-  - "tool-use"
+frameworks:
+  - "MCP"
 ---

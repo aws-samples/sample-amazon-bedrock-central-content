@@ -4,6 +4,7 @@ description: "Customize Amazon Nova models through fine-tuning to enhance tool c
 url: https://aws.amazon.com/blogs/machine-learning/customize-amazon-nova-models-to-improve-tool-usage/
 date: '2025-04-28'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/04/23/iML-18065-SolutionOverviewjpg-911x630.jpg"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
@@ -13,8 +14,8 @@ topics:
   - "evaluation"
 bedrockFeatures:
   - "Custom Models"
+  - "Model Distillation"
   - "Converse API"
-  - "Messages API"
 modelProviders:
   - "Amazon"
 models:

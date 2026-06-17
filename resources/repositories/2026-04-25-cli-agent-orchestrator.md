@@ -1,16 +1,17 @@
 ---
-date: '2026-04-25'
-description: A lightweight orchestration system from AWS Labs that manages hierarchical
-  multi-agent collaboration across CLI developer agents (Claude Code, Amazon Q, Kiro,
-  Codex, Gemini, Kimi, Copilot) running in isolated tmux sessions, coordinated through
-  an MCP server with handoff, assign, and send-message patterns.
-- MCP
-image: /images/aws-logo_2.svg
-title: Cli Agent Orchestrator
-- multi-agent
-- tool-use
-- coding-agents
-type: repositories
+title: "CLI Agent Orchestrator"
+description: "An open-source multi-agent orchestration framework from AWS Labs for AI coding CLIs, running each agent in an isolated tmux session and coordinating them via a supervisor-worker pattern over MCP."
 url: https://github.com/awslabs/cli-agent-orchestrator
+date: '2026-04-25'
+image: "/images/aws-logo_2.svg"
+type: "repositories"
+topics:
+  - "multi-agent"
+  - "tool-use"
+  - "coding-agents"
+frameworks:
+  - "MCP"
+developerTools:
+  - "Claude Code"
+  - "Amazon Q Developer"
 ---
-

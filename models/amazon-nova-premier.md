@@ -5,7 +5,7 @@ specifications:
   description: Nova Premier is Amazon's multimodal model for complex reasoning, agentic workflows, and model distillation.
   provider: Amazon
   modelId: amazon.nova-premier-v1:0
-  lifecycle: Active
+  lifecycle: Legacy
   launchDate: Oct 31, 2025
   contextWindow: 1M tokens
   knowledgeCutoff: Oct 2024

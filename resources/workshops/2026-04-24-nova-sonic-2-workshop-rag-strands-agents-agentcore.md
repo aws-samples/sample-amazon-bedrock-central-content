@@ -1,20 +1,23 @@
 ---
-title: "Nova Sonic 2 workshop - including RAG, Strands Agents, AgentCore multi-agent"
-description: "This workshop covers new Sonic 2 features (new languages, multilingual support, async tool calling, turn-taking config) and helps builders learn Nova Sonic via a customized UI with minimal coding."
+title: "Amazon Nova Sonic 2 (speech-to-speech) Workshop"
+description: "Hands-on workshop guiding builders through creating a voice chat application using Nova Sonic 2 via a bidirectional streaming interface, covering turn-taking configuration, multilingual support, asynchronous tool calling, RAG with Knowledge Bases, MCP integration, Strands Agent workflows, and multi-agent architectures with AgentCore."
 url: https://catalog.workshops.aws/workshops/5238419f-1337-4e0f-8cd7-02239486c40d
 date: '2026-04-24'
 image: "/images/aws-logo_2.svg"
 type: "workshops"
-frameworks:
-  - "Strands"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
 topics:
-  - "voice-agents"
   - "rag"
   - "multi-agent"
+  - "voice-agents"
+  - "tool-use"
 bedrockFeatures:
   - "Knowledge Bases"
-  - "Agents"
+models:
+  - "Nova Sonic"
+frameworks:
+  - "Strands"
+  - "MCP"
 ---

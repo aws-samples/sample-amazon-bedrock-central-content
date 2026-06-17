@@ -7,12 +7,11 @@ specifications:
   modelId: qwen.qwen3-next-80b-a3b
   lifecycle: Active
   launchDate: Sep 11, 2025
-  contextWindow: 128K tokens
+  contextWindow: 256K tokens
   maxOutputTokens: 8K
   reasoning: true
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -81,6 +80,17 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='qwen.qwen3-next-80b-a3b-instruct',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Qwen3 Next 80B A3B
@@ -93,8 +103,4 @@ resources:
     - title: Qwen3 Blog
       url: https://qwenlm.github.io/blog/qwen3/
       type: docs
-  aws:
-    - title: "Alibaba Cloud's Qwen3 models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/alibaba-clouds-qwen3-models-are-now-available-in-amazon-bedrock/
-      type: blog
 ---

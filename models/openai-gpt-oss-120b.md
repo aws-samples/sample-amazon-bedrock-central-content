@@ -27,11 +27,14 @@ specifications:
     - coding
   bedrockFeatures:
     - guardrails
+  crossRegionProfiles:
+    - us-gov
   singleRegions:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-central-1
     - eu-north-1
     - eu-south-1
@@ -40,8 +43,11 @@ specifications:
     - sa-east-1
     - us-east-1
     - us-east-2
+    - us-gov-west-1
     - us-west-2
-  crossRegionInference: []
+  crossRegionInference:
+    - us-gov-east-1
+    - us-gov-west-1
   pricingInputPer1k: 0.00015
   pricingOutputPer1k: 0.0006
   pricingPer1k: 0.00075
@@ -77,6 +83,28 @@ codeExamples:
               'role': 'user',
               'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
           }]
+      )
+      print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='openai.gpt-oss-120b',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
+  - title: Responses API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.responses.create(
+          model='openai.gpt-oss-120b',
+          input='Can you explain the features of Amazon Bedrock?'
       )
       print(response)
 resources:

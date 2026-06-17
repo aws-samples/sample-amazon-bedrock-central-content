@@ -5,7 +5,7 @@ specifications:
   description: Llama 3.1 405B Instruct is Meta's largest open model with 405 billion parameters and a 128K context window, supporting tool use and multilingual tasks.
   provider: Meta
   modelId: meta.llama3-1-405b-instruct-v1:0
-  lifecycle: Active
+  lifecycle: Legacy
   launchDate: Jul 23, 2024
   contextWindow: 128K tokens
   knowledgeCutoff: Dec 2023
@@ -63,10 +63,6 @@ resources:
     - title: AWS Model Card — Llama 3.1 405B Instruct
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-405b-instruct.html
       type: model-card
-  aws:
-    - title: "Meta Llama 3.2 models now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/meta-llama-3-2-models-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Meta Llama Documentation
       url: https://www.llama.com/

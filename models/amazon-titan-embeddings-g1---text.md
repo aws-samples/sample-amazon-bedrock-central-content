@@ -47,10 +47,6 @@ resources:
     - title: AWS Model Card — Titan Embeddings G1 - Text
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-titan-embeddings-g1---text.html
       type: model-card
-  aws:
-    - title: "Amazon Nova foundation models now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/amazon-nova-foundation-models-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Amazon Titan Documentation
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/titan-models.html

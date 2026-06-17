@@ -1,5 +1,5 @@
 ---
-title: "Build reliable Agentic AI solution with Amazon Bedrock: Learn from Pushpay’s journey on GenAI evaluation"
+title: "Build reliable Agentic AI solution with Amazon Bedrock: Learn from Pushpay's journey on GenAI evaluation"
 description: "Learn how Pushpay built a reliable agentic AI solution using Amazon Bedrock, including their approach to creating a custom generative AI evaluation framework for continuous quality assurance and rapid iteration feedback loops."
 url: https://aws.amazon.com/blogs/machine-learning/build-reliable-agentic-ai-solution-with-amazon-bedrock-learn-from-pushpays-journey-on-genai-evaluation/
 date: '2026-01-27'
@@ -11,7 +11,6 @@ topics:
   - "evaluation"
   - "prompt-engineering"
   - "cost-optimization"
-contentFormat: "article"
 bedrockFeatures:
   - "Prompt Caching"
   - "Model Evaluation"

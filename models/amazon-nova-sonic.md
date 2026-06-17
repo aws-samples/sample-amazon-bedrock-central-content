@@ -14,7 +14,6 @@ specifications:
   endpointsSupported:
     - bedrock-runtime
   inputModalities:
-    - Audio
     - Speech
   outputModalities:
     - Speech

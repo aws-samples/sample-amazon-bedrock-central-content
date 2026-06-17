@@ -11,7 +11,10 @@ topics:
   - "security"
   - "deployment"
   - "observability"
-contentFormat: "guide"
 bedrockFeatures:
   - "Guardrails"
+  - "Converse API"
+frameworks:
+  - "LangChain"
+  - "Strands"
 ---

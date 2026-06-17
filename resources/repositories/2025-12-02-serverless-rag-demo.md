@@ -1,17 +1,26 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-02'
-description: This repository demonstrates a scalable Retrieval Augmented Generation
-  (RAG) solution using Amazon Bedrock Foundation models and Amazon OpenSearch Serverless
-  as a vector database for faster similarity searches. It includes features like document
-  chat, multi-agent collaboration, sentiment analysis, PII redaction, and OCR.
-- Strands
-services:
-- Amazon Bedrock
-- Amazon OpenSearch Serverless
-title: Serverless Rag Demo
-type: repositories
+title: "Serverless RAG Demo with Amazon Bedrock and OpenSearch Serverless"
+description: "A scalable RAG and multi-agent workflow solution powered by Amazon Bedrock, OpenSearch Serverless, and Bedrock AgentCore, featuring document chat with hybrid search and a Strands Graph orchestrator with specialist nodes."
 url: https://github.com/aws-samples/serverless-rag-demo
+date: '2025-12-02'
+type: "repositories"
+services:
+  - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
+  - "Amazon OpenSearch Serverless"
+  - "Amazon Cognito"
+  - "Amazon S3"
+  - "Amazon API Gateway"
+  - "AWS CDK"
+bedrockFeatures:
+  - "Knowledge Bases"
+models:
+  - "Claude Sonnet 4.6"
+  - "Claude Opus 4.6"
+frameworks:
+  - "Strands"
+topics:
+  - "rag"
+  - "multi-agent"
+  - "code-generation"
 ---
-

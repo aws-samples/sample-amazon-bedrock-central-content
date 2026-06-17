@@ -17,6 +17,4 @@ services:
 topics:
   - "deployment"
   - "observability"
-bedrockFeatures:
-  - "Agents"
 ---

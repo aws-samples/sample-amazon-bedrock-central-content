@@ -4,6 +4,7 @@ description: "This post guides readers through building a travel planning soluti
 url: https://aws.amazon.com/blogs/machine-learning/create-a-travel-planning-agentic-workflow-with-amazon-nova/
 date: '2025-08-18'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/31/ML-18031-image-4-1159x630.png"
+type: "blogs"
 frameworks:
   - "LangGraph"
 services:
@@ -11,10 +12,11 @@ services:
   - "AWS Lambda"
   - "Amazon DynamoDB"
   - "Amazon API Gateway"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "Amazon S3"
   - "AWS CDK"
   - "AWS CloudFormation"
+  - "Amazon Cognito"
 topics:
   - "multi-agent"
   - "tool-use"

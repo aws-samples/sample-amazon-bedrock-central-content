@@ -22,7 +22,6 @@ topics:
   - "tool-use"
   - "memory"
 bedrockFeatures:
-  - "Agents"
   - "Guardrails"
 modelProviders:
   - "Amazon"

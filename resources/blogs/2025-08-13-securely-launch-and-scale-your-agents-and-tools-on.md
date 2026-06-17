@@ -4,22 +4,17 @@ description: "This post explains how Amazon Bedrock AgentCore Runtime enables si
 url: https://aws.amazon.com/blogs/machine-learning/securely-launch-and-scale-your-agents-and-tools-on-amazon-bedrock-agentcore-runtime/
 date: '2025-08-13'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/08/13/ml-19422-1120x630.jpg"
-frameworks:
-  - "LangGraph"
-  - "Strands"
-  - "CrewAI"
-  - "LlamaIndex"
-  - "AutoGen"
-  - "MCP"
+type: "blogs"
 services:
-  - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
-  - "Amazon S3"
-  - "AWS IAM"
+  - "Amazon Bedrock"
+  - "Amazon Cognito"
 topics:
   - "deployment"
   - "security"
-  - "enterprise"
-modelProviders:
-  - "Anthropic"
+frameworks:
+  - "Strands"
+  - "LangGraph"
+  - "CrewAI"
+  - "MCP"
 ---

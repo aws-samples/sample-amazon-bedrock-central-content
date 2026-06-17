@@ -12,10 +12,12 @@ services:
   - "Amazon Bedrock AgentCore"
   - "Amazon S3"
   - "Amazon OpenSearch"
+  - "AWS IAM"
 topics:
   - "rag"
   - "knowledge-bases"
   - "multimodal"
+  - "tool-use"
 bedrockFeatures:
   - "Knowledge Bases"
 ---

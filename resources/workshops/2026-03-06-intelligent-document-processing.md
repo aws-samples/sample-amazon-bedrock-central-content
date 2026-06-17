@@ -7,8 +7,6 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
-  - "AWS Lambda"
   - "AWS Step Functions"
-topics:
-  - "multimodal"
+  - "AWS Lambda"
 ---

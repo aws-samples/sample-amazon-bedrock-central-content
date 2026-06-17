@@ -7,11 +7,10 @@ specifications:
   modelId: zai.glm-4.7-flash
   lifecycle: Active
   launchDate: Jan 19, 2026
-  contextWindow: 128K tokens
+  contextWindow: 203K tokens
   maxOutputTokens: 4K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -34,6 +33,7 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-central-1
     - eu-north-1
     - eu-south-1
@@ -51,17 +51,6 @@ specifications:
   pricingTier: "$"
   pricingUnit: "token"
 codeExamples:
-  - title: Responses API
-    language: python
-    code: |
-      from openai import OpenAI
-
-      client = OpenAI()
-      response = client.responses.create(
-          model='zai.glm-4.7-flash',
-          input='Can you explain the features of Amazon Bedrock?'
-      )
-      print(response)
   - title: Chat Completions API
     language: python
     code: |
@@ -108,10 +97,6 @@ resources:
     - title: AWS Model Card — GLM 4.7 Flash
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-4-7-flash.html
       type: model-card
-  aws:
-    - title: "Amazon Bedrock now supports Zhipu AI models"
-      url: https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-bedrock-zhipu-ai-models/
-      type: whats-new
   provider:
     - title: Z.AI GLM-4.7 Documentation
       url: https://docs.z.ai/guides/llm/glm-4.7

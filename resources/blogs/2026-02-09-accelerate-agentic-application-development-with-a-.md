@@ -8,6 +8,7 @@ type: "blogs"
 frameworks:
   - "Strands"
   - "LangGraph"
+  - "CrewAI"
   - "MCP"
 services:
   - "Amazon Bedrock"
@@ -19,13 +20,15 @@ services:
   - "Amazon CloudWatch"
   - "AWS CDK"
   - "AWS CloudFormation"
+  - "Amazon Cognito"
+  - "AWS IAM"
 topics:
   - "deployment"
   - "memory"
   - "observability"
   - "tool-use"
-bedrockFeatures:
-  - "Agents"
+  - "multi-agent"
+  - "streaming"
 developerTools:
   - "Cline"
   - "Claude Code"

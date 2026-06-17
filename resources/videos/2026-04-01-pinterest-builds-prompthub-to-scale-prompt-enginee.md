@@ -11,4 +11,6 @@ topics:
   - "prompt-engineering"
   - "evaluation"
   - "enterprise"
+bedrockFeatures:
+  - "Prompt Management"
 ---

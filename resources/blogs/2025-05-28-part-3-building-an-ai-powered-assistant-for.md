@@ -4,10 +4,11 @@ description: "Build a multi-agent investment research assistant using Amazon Bed
 url: https://aws.amazon.com/blogs/machine-learning/part-3-building-an-ai-powered-assistant-for-investment-research-with-multi-agent-collaboration-in-amazon-bedrock-and-amazon-bedrock-data-automation/
 date: '2025-05-28'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/05/15/technical.jpg"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "Amazon S3"
   - "AWS IAM"
   - "AWS CloudFormation"
@@ -16,7 +17,6 @@ topics:
   - "rag"
   - "knowledge-bases"
   - "multimodal"
-  - "enterprise"
 bedrockFeatures:
   - "Agents"
   - "Knowledge Bases"

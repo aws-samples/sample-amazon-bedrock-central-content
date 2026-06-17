@@ -9,12 +9,12 @@ services:
   - "Amazon Bedrock"
 topics:
   - "fine-tuning"
+  - "model-customization"
   - "evaluation"
-contentFormat: "article"
 bedrockFeatures:
   - "Custom Models"
 modelProviders:
   - "Amazon"
 models:
-  - "Nova 2"
+  - "Nova 2 Lite"
 ---

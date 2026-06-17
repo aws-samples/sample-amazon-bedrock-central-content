@@ -7,11 +7,10 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
+  - "AWS Step Functions"
   - "Amazon S3"
 topics:
   - "multimodal"
-  - "evaluation"
-bedrockFeatures:
-  - "Embeddings"
-  - "Model Evaluation"
+models:
+  - "Amazon Nova"
 ---

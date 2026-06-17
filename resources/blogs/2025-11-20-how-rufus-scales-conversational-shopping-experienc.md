@@ -13,7 +13,6 @@ topics:
   - "cost-optimization"
   - "enterprise"
   - "evaluation"
-contentFormat: "article"
 bedrockFeatures:
   - "Converse API"
   - "Prompt Caching"
@@ -22,5 +21,4 @@ modelProviders:
   - "Anthropic"
 models:
   - "Amazon Nova"
-  - "Claude Sonnet 4.6"
 ---

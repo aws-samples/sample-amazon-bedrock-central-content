@@ -9,9 +9,10 @@ services:
   - "Amazon Bedrock"
 topics:
   - "deployment"
-contentFormat: "article"
 bedrockFeatures:
   - "Cross-Region Inference"
+  - "Converse API"
+  - "Knowledge Bases"
 modelProviders:
   - "Anthropic"
 models:

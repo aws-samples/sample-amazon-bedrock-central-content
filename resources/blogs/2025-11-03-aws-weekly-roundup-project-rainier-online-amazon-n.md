@@ -11,11 +11,9 @@ frameworks:
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "AWS Step Functions"
   - "Amazon CloudWatch"
 topics:
   - "multimodal"
-contentFormat: "article"
 bedrockFeatures:
   - "Embeddings"
 modelProviders:

@@ -11,14 +11,11 @@ services:
   - "Amazon OpenSearch"
   - "Amazon S3"
   - "Amazon CloudWatch"
+  - "Amazon ECS"
 topics:
   - "multi-agent"
   - "enterprise"
   - "rag"
-contentFormat: "article"
-bedrockFeatures:
-  - "Knowledge Bases"
-  - "Agents"
 modelProviders:
   - "Anthropic"
 ---

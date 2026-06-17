@@ -5,19 +5,22 @@ url: https://aws.amazon.com/blogs/machine-learning/build-a-generative-ai-powered
 date: '2026-01-15'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/01/15/ml-18678-1120x630.png"
 type: "blogs"
-frameworks:
-  - "LangChain"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "Amazon API Gateway"
-  - "Amazon DynamoDB"
   - "Amazon S3"
+  - "Amazon Cognito"
+  - "Amazon API Gateway"
   - "Amazon CloudWatch"
+  - "Amazon DynamoDB"
   - "AWS CDK"
 topics:
-  - "enterprise"
-contentFormat: "article"
+  - "content-generation"
+  - "streaming"
+bedrockFeatures:
+  - "Guardrails"
 modelProviders:
   - "Anthropic"
+frameworks:
+  - "LangChain"
 ---

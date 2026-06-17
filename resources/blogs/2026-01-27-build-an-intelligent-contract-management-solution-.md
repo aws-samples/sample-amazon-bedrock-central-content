@@ -18,6 +18,4 @@ services:
 topics:
   - "multi-agent"
   - "enterprise"
-bedrockFeatures:
-  - "Agents"
 ---

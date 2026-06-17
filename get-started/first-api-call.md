@@ -1,25 +1,37 @@
 ---
 title: "Your first API call"
-subtitle: "Every model has a unique ID. Find yours in the model cards, pick a Region, and call it."
+subtitle: "Find your model's ID and available Regions in the [model cards](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html), then call it."
 type: "get-started"
-modelLinks:
-  - ctx: "Find model IDs in the"
-    label: "model cards →"
-    url: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html"
-  - ctx: "See Sonnet 4.6 in its"
-    label: "model card →"
-    url: "https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-anthropic-claude-sonnet-4-6.html#model-card-anthropic-claude-sonnet-4-6-programmatic-access"
 
 footerLink:
-  ctx: "Bedrock offers five API patterns beyond invoke_model."
-  label: "See all APIs →"
+  ctx: "Bedrock offers multiple APIs to fit your needs. See "
+  label: "APIs supported by Bedrock for more details"
   url: "https://docs.aws.amazon.com/bedrock/latest/userguide/apis.html"
 
-# Concrete example used throughout Step 3 code and globe.
-# Swap in any other model id for your own app.
 featuredModel:
   modelId: "anthropic.claude-sonnet-4-6"
   displayName: "Claude Sonnet 4.6"
+
+labels:
+  model: "Choose a model"
+  region: "Choose a Region to call"
+  routing: "Choose how requests route"
+
+code: |
+  import boto3, json
+
+  bedrock = boto3.client("bedrock-runtime", region_name="{{REGION}}")
+
+  resp = bedrock.invoke_model(
+      modelId="{{MODEL_ID}}",
+      body=json.dumps({
+          "messages": [{"role": "user",
+              "content": "Hello, Bedrock!"}],
+          "max_tokens": 512,
+      }),
+  )
+
+  print(json.loads(resp["body"].read()))
 
 # Inference profile shapes, with real destination regions for Claude Sonnet 4.6.
 profiles:
@@ -82,18 +94,3 @@ profiles:
     desc: "Request stays in the Region your client points at."
     shape: "in-region"
 ---
-
-## What this step teaches
-
-Amazon Bedrock exposes a single `invoke_model` API. With **cross-Region
-inference**, you can pass an **inference profile** — a lightweight prefix
-on the `modelId` — to let Bedrock automatically route each request to the
-optimal Region:
-
-- `global.<model-id>` — Amazon Bedrock selects the optimal commercial AWS Region
-- `us.<model-id>` / `eu.<model-id>` / `jp.<model-id>` / `au.<model-id>` — Bedrock selects the optimal Region within that geography
-- `<model-id>` (no prefix) — the request stays in the Region your client points at
-
-The example on this page uses Claude Sonnet 4.6. Which profiles and
-Regions each model supports is model-specific — see the [Models at a glance](/models)
-page for per-model availability, or the AWS [Model Cards](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html).

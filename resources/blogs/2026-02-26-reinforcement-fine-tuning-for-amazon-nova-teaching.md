@@ -12,11 +12,9 @@ services:
 topics:
   - "fine-tuning"
   - "evaluation"
-bedrockFeatures:
-  - "Custom Models"
 modelProviders:
   - "Amazon"
 models:
   - "Nova 2"
-  - "Nova Lite"
+  - "Nova 2 Lite"
 ---

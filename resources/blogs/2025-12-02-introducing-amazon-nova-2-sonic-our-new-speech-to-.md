@@ -7,14 +7,10 @@ image: "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a835
 type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "AWS IAM"
 topics:
   - "voice-agents"
-  - "multi-agent"
-  - "tool-use"
-contentFormat: "article"
-modelProviders:
-  - "Amazon"
+  - "streaming"
+  - "multimodal"
 models:
-  - "Nova 2"
+  - "Nova Sonic"
 ---

@@ -81,10 +81,6 @@ resources:
     - title: AWS Model Card — Mixtral 8x7B Instruct
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mixtral-8x7b-instruct.html
       type: model-card
-  aws:
-    - title: "Mistral AI models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/mistral-ai-models-are-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Mistral AI Documentation
       url: https://docs.mistral.ai/

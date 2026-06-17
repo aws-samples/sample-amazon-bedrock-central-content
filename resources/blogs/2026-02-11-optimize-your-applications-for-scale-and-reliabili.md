@@ -8,22 +8,24 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon CloudWatch"
-  - "AWS IAM"
   - "AWS Step Functions"
   - "Amazon DynamoDB"
+  - "AWS IAM"
+  - "Amazon API Gateway"
 topics:
+  - "deployment"
   - "cost-optimization"
   - "observability"
-  - "deployment"
-contentFormat: "guide"
 bedrockFeatures:
   - "Cross-Region Inference"
   - "Batch Inference"
-modelProviders:
-  - "Anthropic"
+  - "Converse API"
 models:
+  - "Claude Sonnet 4"
   - "Claude Opus 4.6"
   - "Claude Sonnet 4.5"
   - "Claude 3.7 Sonnet"
   - "Claude Haiku 4.5"
+modelProviders:
+  - "Anthropic"
 ---

@@ -1,52 +1,89 @@
 ---
-title: "LiteLLM"
-type: "collection"
-category: "litellm"
-description: "Use LiteLLM as a unified proxy and gateway for Amazon Bedrock, providing OpenAI-compatible API access, load balancing, and spend tracking."
-date: "2026-03-17"
+title: "LLM Gateway with LiteLLM"
+type: "operate-and-manage"
+category: "gateway-traffic"
+description: "Run LiteLLM as a production gateway on AWS in front of Bedrock: choose a deployment, route and fail over across models, and operate keys, budgets, and observability."
+date: "2026-06-14"
 services:
   - Amazon Bedrock
 topics:
   - cost-optimization
+  - observability
   - deployment
-resources: []
+  - enterprise
 ---
 
-# LiteLLM on Bedrock
+LiteLLM is an open-source LLM gateway: one OpenAI-compatible endpoint in front of Amazon Bedrock and 100+ providers. This card is about running it for real on AWS, where it becomes the control plane that owns routing, resilience, access, and spend for every team behind it.
 
-LiteLLM is an open-source LLM gateway that provides an OpenAI-compatible API for 100+ model providers including Amazon Bedrock. It can run as a lightweight proxy server, making it easy to route existing OpenAI-based code to Bedrock models without code changes.
+## Choose a deployment
 
-## Getting Started
+Start local to prove the integration, then move to a managed container for anything shared. The [AWS Multi-Provider Generative AI Gateway reference architecture](https://aws.amazon.com/blogs/machine-learning/streamline-ai-operations-with-the-multi-provider-generative-ai-gateway-reference-architecture/) ships LiteLLM on ECS or EKS behind an Application Load Balancer with CloudWatch and Langfuse observability.
 
-Install LiteLLM and start the proxy to expose Bedrock as an OpenAI-compatible endpoint:
+| Deployment | Best for | Notes |
+|---|---|---|
+| **Local proxy** | A single developer or a quick spike | `litellm --config config.yaml`, no infra |
+| **Amazon ECS** | Most shared/production gateways | Serverless containers, autoscaling, integrated load balancing |
+| **Amazon EKS** | Teams already standardized on Kubernetes | Full control over orchestration |
+
+## Route and fail over
+
+Register several Bedrock deployments under one `model_name` and the gateway distributes load across them to bypass per-model rate limits. Below, two Claude Opus versions share the `claude-prod` group (weighted toward 4.8), and GPT models stand by as a cross-provider fallback if Claude is unavailable. Set a [routing strategy](https://docs.litellm.ai/docs/routing) (`simple-shuffle` is the default weighted pick; `least-busy`, `latency-based-routing`, `usage-based-routing`, and `cost-based-routing` are the alternatives), and add retries. LiteLLM uses the [boto3 credential chain](https://docs.litellm.ai/docs/providers/bedrock), so task roles authenticate to Bedrock with no stored keys.
+
+```yaml
+router_settings:
+  routing_strategy: simple-shuffle   # default; weighted/random pick
+  num_retries: 3
+  fallbacks: [{"claude-prod": ["gpt-prod"]}]
+
+model_list:
+  - model_name: claude-prod
+    litellm_params:
+      model: bedrock/anthropic.claude-opus-4-8
+      aws_region_name: us-east-1
+      weight: 2
+  - model_name: claude-prod
+    litellm_params:
+      model: bedrock/anthropic.claude-opus-4-7
+      aws_region_name: us-east-1
+      weight: 1
+  - model_name: gpt-prod
+    litellm_params:
+      model: bedrock/openai.gpt-5.5
+      aws_region_name: us-east-1
+  - model_name: gpt-prod
+    litellm_params:
+      model: bedrock/openai.gpt-5.4
+      aws_region_name: us-east-1
+```
+
+## Operate: keys, budgets, and visibility
+
+Day-two operations run on [virtual keys](https://docs.litellm.ai/docs/proxy/virtual_keys). Issue one per team with a model allowlist, `rpm`/`tpm` limits, and a resetting budget; spend is tracked in USD per key and rolls up per user and team. Send request logs and latency, error, and cost metrics to CloudWatch or Langfuse, route per-team spend into Cost Explorer for chargeback, and apply Bedrock Guardrails for one policy across every model.
 
 ```bash
-pip install 'litellm[proxy]'
-litellm --model bedrock/anthropic.claude-sonnet-4-20250514-v1:0
+curl -X POST https://gateway.internal/key/generate \
+  -H "Authorization: Bearer $LITELLM_MASTER_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "models": ["claude-prod", "gpt-prod"],
+    "team_id": "platform-team",
+    "max_budget": 200,
+    "budget_duration": "30d",
+    "rpm_limit": 60,
+    "tpm_limit": 100000
+  }'
 ```
 
-Then point any OpenAI-compatible client to `http://localhost:4000/v1`:
+## Resources
 
-```python
-from openai import OpenAI
+**LiteLLM docs**
 
-client = OpenAI(base_url="http://localhost:4000/v1", api_key="any")
-response = client.chat.completions.create(
-    model="bedrock/anthropic.claude-sonnet-4-20250514-v1:0",
-    messages=[{"role": "user", "content": "Hello"}]
-)
-```
+- [Bedrock provider (auth, model IDs, Converse/Invoke)](https://docs.litellm.ai/docs/providers/bedrock)
+- [Routing, retries, and fallbacks](https://docs.litellm.ai/docs/routing)
+- [Virtual keys, budgets, and rate limits](https://docs.litellm.ai/docs/proxy/virtual_keys)
+- [Logging and observability](https://docs.litellm.ai/docs/proxy/logging)
 
-- [Docs: LiteLLM Bedrock integration](https://docs.litellm.ai/docs/providers/bedrock)
-- [Docs: LiteLLM proxy setup](https://docs.litellm.ai/docs/simple_proxy)
+**AWS**
 
-## Build with LiteLLM on Bedrock
-
-LiteLLM acts as a drop-in OpenAI replacement that routes to Bedrock without code changes. Use it to connect tools that only support OpenAI's API (Cursor, Continue, etc.) to Bedrock models. Distribute requests across multiple Bedrock models or regions with built-in load balancing, and set up automatic failover to backup models if the primary is unavailable. Redis-based response caching reduces redundant calls for repeated prompts.
-
-- [Docs: LiteLLM documentation](https://docs.litellm.ai/)
-- [Code: LiteLLM on GitHub](https://github.com/BerriAI/litellm)
-
-## Administer and Operate LiteLLM
-
-Issue virtual API keys with per-key budgets and model access controls for team management. Track per-user and per-team token usage and costs through built-in spend tracking. Set request and token rate limits per API key to control consumption. Route between different Bedrock models based on request type or cost to optimize spend across your organization.
+- [Blog: Multi-Provider Generative AI Gateway reference architecture](https://aws.amazon.com/blogs/machine-learning/streamline-ai-operations-with-the-multi-provider-generative-ai-gateway-reference-architecture/)
+- [Code: Multi-Provider Generative AI Gateway on AWS](https://github.com/aws-solutions-library-samples/guidance-for-multi-provider-generative-ai-gateway-on-aws)

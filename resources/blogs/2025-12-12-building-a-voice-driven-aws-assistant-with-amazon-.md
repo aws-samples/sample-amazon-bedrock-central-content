@@ -4,8 +4,7 @@ description: "This post guides readers through building a voice-powered AWS oper
 url: https://aws.amazon.com/blogs/machine-learning/building-a-voice-driven-aws-assistant-with-amazon-nova-sonic/
 date: '2025-12-12'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/12/12/ML-19180-1120x630.png"
-frameworks:
-  - "Strands"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
@@ -15,10 +14,13 @@ topics:
   - "voice-agents"
   - "multi-agent"
   - "tool-use"
+  - "streaming"
+models:
+  - "Nova Sonic"
+  - "Claude 3 Haiku"
 modelProviders:
   - "Amazon"
   - "Anthropic"
-models:
-  - "Amazon Nova"
-  - "Claude 3.5 Haiku"
+frameworks:
+  - "Strands"
 ---

@@ -4,6 +4,7 @@ description: "This post demonstrates advanced fine-tuning techniques that enable
 url: https://aws.amazon.com/blogs/machine-learning/advanced-fine-tuning-techniques-for-multi-agent-orchestration-patterns-from-amazon-at-scale/
 date: '2026-01-16'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/01/16/ml-19832-1120x630.png"
+type: "blogs"
 frameworks:
   - "Strands"
 services:
@@ -17,7 +18,8 @@ topics:
   - "multi-agent"
   - "evaluation"
 bedrockFeatures:
-  - "Agents"
+  - "Custom Models"
+  - "Model Distillation"
   - "Model Evaluation"
 modelProviders:
   - "Amazon"

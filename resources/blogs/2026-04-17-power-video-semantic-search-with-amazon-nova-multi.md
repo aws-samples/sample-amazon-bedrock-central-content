@@ -7,18 +7,22 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "Amazon OpenSearch"
   - "Amazon S3"
+  - "Amazon OpenSearch"
+  - "AWS Lambda"
+  - "Amazon DynamoDB"
+  - "AWS Step Functions"
+  - "AWS Fargate"
+  - "Amazon API Gateway"
+  - "Amazon Cognito"
 topics:
   - "multimodal"
-  - "rag"
-contentFormat: "article"
+  - "search"
 bedrockFeatures:
   - "Embeddings"
-modelProviders:
-  - "Amazon"
-  - "Anthropic"
 models:
-  - "Amazon Nova"
-  - "Nova Lite"
+  - "Claude Haiku"
+modelProviders:
+  - "Anthropic"
+  - "Amazon"
 ---

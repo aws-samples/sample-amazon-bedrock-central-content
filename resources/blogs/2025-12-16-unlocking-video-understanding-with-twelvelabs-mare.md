@@ -7,10 +7,11 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "Amazon S3"
 topics:
   - "multimodal"
+  - "search"
 bedrockFeatures:
   - "Embeddings"
 ---

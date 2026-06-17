@@ -9,21 +9,14 @@ services:
   - "Amazon Bedrock"
   - "AWS Step Functions"
   - "AWS Lambda"
-  - "Amazon API Gateway"
   - "Amazon S3"
-  - "AWS IAM"
+  - "Amazon API Gateway"
   - "Amazon CloudWatch"
 topics:
-  - "enterprise"
+  - "evaluation"
   - "prompt-engineering"
-  - "cost-optimization"
-contentFormat: "article"
 bedrockFeatures:
   - "Flows"
 modelProviders:
   - "Anthropic"
-models:
-  - "Claude 3.5 Sonnet"
-  - "Claude 3 Haiku"
-  - "Claude 3 Opus"
 ---

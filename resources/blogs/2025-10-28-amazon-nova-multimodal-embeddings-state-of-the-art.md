@@ -12,7 +12,7 @@ services:
 topics:
   - "multimodal"
   - "rag"
-contentFormat: "article"
+  - "search"
 bedrockFeatures:
   - "Embeddings"
   - "Batch Inference"
@@ -20,6 +20,4 @@ modelProviders:
   - "Amazon"
 models:
   - "Nova 2"
-developerTools:
-  - "Amazon Q Developer"
 ---

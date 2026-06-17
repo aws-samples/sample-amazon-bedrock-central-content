@@ -9,6 +9,5 @@ services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
   - "Amazon CloudWatch"
-bedrockFeatures:
-  - "Agents"
+  - "Amazon Cognito"
 ---

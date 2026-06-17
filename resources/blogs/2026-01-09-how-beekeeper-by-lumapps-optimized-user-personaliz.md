@@ -7,23 +7,21 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "Amazon EKS"
   - "AWS Lambda"
+  - "Amazon EKS"
 topics:
   - "evaluation"
-  - "prompt-engineering"
-  - "cost-optimization"
-  - "enterprise"
-contentFormat: "article"
 bedrockFeatures:
   - "Converse API"
+models:
+  - "Claude Sonnet 4"
+  - "Llama 3"
+  - "Mistral 8x7B"
+  - "Mistral Large"
+  - "Amazon Nova"
 modelProviders:
-  - "Amazon"
   - "Anthropic"
   - "Meta"
   - "Mistral"
-models:
-  - "Amazon Nova"
-  - "Claude 3.5 Sonnet"
-  - "Llama 3"
+  - "Amazon"
 ---

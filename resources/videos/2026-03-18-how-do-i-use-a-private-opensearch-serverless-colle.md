@@ -7,11 +7,10 @@ image: "https://img.youtube.com/vi/6rRNVxVf7Fg/sddefault.jpg"
 type: "videos"
 services:
   - "Amazon Bedrock"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
 topics:
   - "knowledge-bases"
   - "security"
-contentFormat: "video"
 bedrockFeatures:
   - "Knowledge Bases"
 ---

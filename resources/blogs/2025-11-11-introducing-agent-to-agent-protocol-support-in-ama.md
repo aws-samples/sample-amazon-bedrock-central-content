@@ -4,9 +4,11 @@ description: "Readers will learn how to use the A2A protocol to enable collabora
 url: https://aws.amazon.com/blogs/machine-learning/introducing-agent-to-agent-protocol-support-in-amazon-bedrock-agentcore-runtime/
 date: '2025-11-11'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/11/06/ML-19929-1-1260x546.png"
+type: "blogs"
 frameworks:
   - "Strands"
   - "LangGraph"
+  - "MCP"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
@@ -14,6 +16,7 @@ services:
   - "AWS Lambda"
   - "Amazon DynamoDB"
   - "AWS IAM"
+  - "Amazon Cognito"
 topics:
   - "multi-agent"
   - "observability"

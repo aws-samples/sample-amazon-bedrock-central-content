@@ -14,8 +14,6 @@ services:
 topics:
   - "multi-agent"
   - "tool-use"
-bedrockFeatures:
-  - "Agents"
 modelProviders:
   - "Anthropic"
 models:

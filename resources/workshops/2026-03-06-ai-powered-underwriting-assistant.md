@@ -7,11 +7,11 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
+  - "AWS Lambda"
+  - "Amazon S3"
+  - "AWS Step Functions"
 topics:
   - "multimodal"
-  - "rag"
 modelProviders:
   - "Anthropic"
-bedrockFeatures:
-  - "Agents"
 ---

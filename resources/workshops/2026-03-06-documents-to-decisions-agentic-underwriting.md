@@ -10,6 +10,12 @@ frameworks:
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
+  - "AWS Lambda"
+  - "AWS Step Functions"
+  - "Amazon S3"
+  - "Amazon DynamoDB"
+topics:
+  - "rag"
 bedrockFeatures:
-  - "Agents"
+  - "Knowledge Bases"
 ---

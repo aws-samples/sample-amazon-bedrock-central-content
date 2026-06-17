@@ -77,16 +77,6 @@ resources:
     - title: AWS Model Card — DeepSeek-R1
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-r1.html
       type: model-card
-  aws:
-    - title: "DeepSeek-R1 is now available as a fully managed serverless model in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/deepseek-r1-is-now-available-as-a-fully-managed-serverless-model-in-amazon-bedrock/
-      type: blog
-    - title: "Build agentic AI solutions with DeepSeek-R1, Amazon Bedrock, and AWS Multi-Agent Orchestrator"
-      url: https://aws.amazon.com/blogs/machine-learning/build-agentic-ai-solutions-with-deepseek-r1-amazon-bedrock-and-aws-multi-agent-orchestrator/
-      type: blog
-    - title: "Evaluate DeepSeek-R1 on Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/evaluate-deepseek-r1-on-amazon-bedrock/
-      type: blog
   provider:
     - title: DeepSeek Documentation
       url: https://api-docs.deepseek.com/

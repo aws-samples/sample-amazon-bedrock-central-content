@@ -78,9 +78,14 @@ codeExamples:
       response = client.invoke_model(
           modelId='twelvelabs.pegasus-1-2-v1:0',
           body=json.dumps({
-              'messages': [{'role': 'user',
-                  'content': 'Can you explain the features of Amazon Bedrock?'}],
-              'max_tokens': 1024
+              'inputPrompt': 'Tell me about this video',
+              'mediaSource': {
+                  's3Location': {
+                      'uri': 's3://your-bucket/your-video.mp4',
+                      'bucketOwner': '123456789012'
+                  }
+              },
+              'maxOutputTokens': 4096
           })
       )
       print(json.loads(response['body'].read()))
@@ -89,10 +94,6 @@ resources:
     - title: AWS Model Card — Pegasus v1.2
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-pegasus-v1-2.html
       type: model-card
-  aws:
-    - title: "Twelve Labs models are now available in Amazon Bedrock Marketplace"
-      url: https://aws.amazon.com/blogs/machine-learning/twelve-labs-models-are-now-available-in-amazon-bedrock-marketplace/
-      type: blog
   provider:
     - title: TwelveLabs Pegasus Documentation
       url: https://docs.twelvelabs.io/docs/concepts/models/pegasus

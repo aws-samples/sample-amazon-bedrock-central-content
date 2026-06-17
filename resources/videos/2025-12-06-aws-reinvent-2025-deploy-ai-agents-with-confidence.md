@@ -1,16 +1,16 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-06'
-description: This session will guide enterprises on how to deploy AI agents securely
-  and efficiently using Rubrik and AWS, focusing on gaining confidence and control
-  over agentic AI systems that interact with sensitive data and autonomous workflows.
-image: https://img.youtube.com/vi/LVH2mBpXshg/hqdefault.jpg
-title: AWS re:Invent 2025 - Deploy AI Agents with Confidence & Control with Rubrik
-  and AWS (ISV320)
-- deployment
-- security
-- enterprise
+title: "AWS re:Invent 2025 - Deploy AI Agents with Confidence & Control with Rubrik and AWS (ISV320)"
+description: "Rubrik and AWS demonstrate how to adopt AI agents with confidence through AI Resilience, unifying observability, governance, and recoverability across agents compatible with Amazon Bedrock AgentCore."
 url: https://www.youtube.com/watch?v=LVH2mBpXshg
+date: '2025-12-06'
+image: "https://img.youtube.com/vi/LVH2mBpXshg/hqdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
+topics:
+  - "deployment"
+  - "security"
+  - "enterprise"
+  - "observability"
 ---
-

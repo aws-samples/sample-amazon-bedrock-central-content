@@ -4,11 +4,13 @@ description: "Build a multi-agent generative AI system using LangGraph orchestra
 url: https://aws.amazon.com/blogs/machine-learning/transforming-credit-decisions-using-generative-ai-with-rich-data-co-and-aws/
 date: '2025-02-10'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/01/30/Picture1-6.png"
+type: "blogs"
 frameworks:
   - "LangGraph"
 services:
   - "Amazon Bedrock"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
+  - "Amazon Aurora"
 topics:
   - "rag"
   - "multi-agent"
@@ -16,7 +18,6 @@ topics:
   - "enterprise"
 bedrockFeatures:
   - "Knowledge Bases"
-  - "Agents"
   - "Embeddings"
 modelProviders:
   - "Anthropic"

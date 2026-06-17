@@ -1,18 +1,13 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-07'
-description: This session explores how to effectively build and deploy AI applications
-  and agentic platforms using Amazon Bedrock, addressing common challenges that prevent
-  AI initiatives from reaching production. Attendees will learn best practices for
-  automating manual processes and boosting productivity through AI.
-image: https://img.youtube.com/vi/b0qdrFi7MCw/hqdefault.jpg
-services:
-- Amazon Bedrock
-title: AWS re:Invent 2025 - Powering AI and agentic platforms with Amazon Bedrock
-  (AIM3305)
-- deployment
-- enterprise
+title: "AWS re:Invent 2025 - Powering AI and agentic platforms with Amazon Bedrock (AIM3305)"
+description: "Explores critical challenges of building, deploying, and scaling enterprise AI systems with Amazon Bedrock, featuring Vercel's experience building and scaling their production AI platform with Bedrock integrations."
 url: https://www.youtube.com/watch?v=b0qdrFi7MCw
+date: '2025-12-07'
+image: "https://img.youtube.com/vi/b0qdrFi7MCw/hqdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock"
+topics:
+  - "deployment"
+  - "enterprise"
 ---
-

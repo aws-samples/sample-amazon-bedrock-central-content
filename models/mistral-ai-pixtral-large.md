@@ -80,10 +80,6 @@ resources:
     - title: AWS Model Card — Pixtral Large
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-pixtral-large.html
       type: model-card
-  aws:
-    - title: "Pixtral Large is now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/pixtral-large-is-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Mistral AI Documentation
       url: https://docs.mistral.ai/

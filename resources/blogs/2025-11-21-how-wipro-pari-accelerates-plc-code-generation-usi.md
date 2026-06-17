@@ -8,13 +8,13 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
+  - "Amazon Cognito"
   - "AWS IAM"
 topics:
   - "coding-agents"
   - "prompt-engineering"
   - "enterprise"
   - "security"
-contentFormat: "article"
 bedrockFeatures:
   - "Guardrails"
 modelProviders:

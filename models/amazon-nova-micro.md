@@ -68,7 +68,7 @@ codeExamples:
           body=json.dumps({
               'messages': [{'role': 'user',
                   'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]}],
-              'inferenceConfig': {'maxNewTokens': 1024}
+              'inferenceConfig': {'maxTokens': 1024}
           })
       )
       print(json.loads(response['body'].read()))

@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 16K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -33,6 +32,10 @@ specifications:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-central-1
+    - eu-north-1
     - eu-south-1
     - eu-west-1
     - eu-west-2
@@ -78,13 +81,24 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='openai.gpt-oss-safeguard-20b',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — GPT OSS Safeguard 20B
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-openai-gpt-oss-safeguard-20b.html
       type: model-card
   provider:
-    - title: "gpt-oss-20b — Hugging Face"
-      url: https://huggingface.co/openai/gpt-oss-20b
+    - title: "gpt-oss-safeguard-20b — Hugging Face"
+      url: https://huggingface.co/openai/gpt-oss-safeguard-20b
       type: docs
 ---

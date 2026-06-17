@@ -8,7 +8,10 @@ type: "videos"
 services:
   - "Amazon EKS"
   - "Amazon S3"
+  - "Amazon Aurora"
 topics:
   - "enterprise"
   - "tool-use"
+frameworks:
+  - "MCP"
 ---

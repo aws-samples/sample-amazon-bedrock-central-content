@@ -92,6 +92,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='anthropic.claude-sonnet-4-6',
           body=json.dumps({
+              'anthropic_version': 'bedrock-2023-05-31',
               'messages': [{'role': 'user',
                   'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024
@@ -126,7 +127,7 @@ resources:
       type: blog
   provider:
     - title: Anthropic Claude Documentation
-      url: https://docs.anthropic.com/en/docs/about-claude/models/all-models
+      url: https://platform.claude.com/docs/en/docs/about-claude/models/all-models
       type: docs
     - title: Claude Model Benchmarks & Evaluation
       url: https://www.anthropic.com/research/evaluating-ai-systems

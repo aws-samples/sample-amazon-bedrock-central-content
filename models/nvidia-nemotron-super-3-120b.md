@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 32K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -29,18 +28,23 @@ specifications:
     - flows
     - guardrails
     - model-evaluation
+  crossRegionProfiles:
+    - us-gov
   singleRegions:
     - ap-northeast-1
-    - ap-south-1
     - ap-southeast-2
+    - ap-southeast-4
     - eu-south-1
     - eu-west-1
     - eu-west-2
     - sa-east-1
     - us-east-1
     - us-east-2
+    - us-gov-west-1
     - us-west-2
-  crossRegionInference: []
+  crossRegionInference:
+    - us-gov-east-1
+    - us-gov-west-1
   pricingInputPer1k: 0.00015
   pricingOutputPer1k: 0.00065
   pricingPer1k: 0.0008
@@ -78,17 +82,24 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='nvidia.nemotron-super-3-120b',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — NVIDIA Nemotron 3 Super 120B
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nemotron-super-3-120b.html
       type: model-card
-  aws:
-    - title: "NVIDIA Nemotron models now available on Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/nvidia-nemotron-models-now-available-on-amazon-bedrock/
-      type: blog
   provider:
-    - title: NVIDIA Nemotron Models
-      url: https://www.nvidia.com/en-us/ai/llama-nemotron/
+    - title: NVIDIA Nemotron 3 Super 120B
+      url: https://build.nvidia.com/nvidia/nemotron-3-super-120b-a12b/modelcard
       type: docs
 ---

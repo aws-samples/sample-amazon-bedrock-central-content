@@ -11,7 +11,6 @@ services:
 topics:
   - "rag"
   - "knowledge-bases"
-contentFormat: "article"
 bedrockFeatures:
   - "Knowledge Bases"
 ---

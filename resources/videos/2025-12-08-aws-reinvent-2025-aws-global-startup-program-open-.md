@@ -1,14 +1,8 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-08'
-description: This session will guide attendees through how open source projects can
-  be transformed into profitable businesses by leveraging managed services and AI
-  agents, with support from the AWS Global Startup Program for both technical development
-  and go-to-market strategies.
-image: https://img.youtube.com/vi/X8JFb_NRO4c/hqdefault.jpg
-title: 'AWS re:Invent 2025 - AWS Global Startup Program: Open source commercial strategy
-  with AWS (PEX105)'
+title: "AWS re:Invent 2025 - AWS Global Startup Program: Open source commercial strategy with AWS (PEX105)"
+description: "This session covers how open source projects can transform into profitable businesses through managed services and AI agents, with AWS Global Startup Program support for technical and go-to-market success."
 url: https://www.youtube.com/watch?v=X8JFb_NRO4c
+date: '2025-12-08'
+image: "https://img.youtube.com/vi/X8JFb_NRO4c/hqdefault.jpg"
+type: "videos"
 ---
-

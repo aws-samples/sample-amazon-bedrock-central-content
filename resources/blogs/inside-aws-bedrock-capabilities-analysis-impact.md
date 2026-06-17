@@ -1,10 +1,17 @@
 ---
 title: "Inside AWS Bedrock: Capabilities | Analysis | Impact"
-description: "Learn about AWS Bedrock's capabilities, analysis of its features, and the impact it can have on building generative AI applications."
+description: "Explore the core features, in-depth analysis, and the profound impact of Amazon Bedrock for building generative AI applications, covering Agents, Knowledge Bases, Guardrails, and fine-tuning."
 url: https://builder.aws.com/content/2Z5p3y9E4lCvybNVVdgQYmQKn98/inside-aws-bedrock-capabilities-or-analysis-or-impact
 date: ''
-image: "https://builder.aws.com/assets/og-hiXAX-on.png"
+image: "https://assets.community.aws/a/2Z705OPOXi8V47M0pKztDOGHEKE.jpeg?imgSize=300x168"
+type: "blogs"
 services:
   - "Amazon Bedrock"
-contentFormat: "article"
+topics:
+  - "rag"
+bedrockFeatures:
+  - "Agents"
+  - "Knowledge Bases"
+  - "Guardrails"
+  - "Custom Models"
 ---

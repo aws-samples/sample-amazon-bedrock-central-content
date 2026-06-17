@@ -1,6 +1,6 @@
 ---
 title: "OpenClaw"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "openclaw"
 description: "Deploy OpenClaw on AWS with Amazon Bedrock — an open-source, self-hosted autonomous AI agent that connects to WhatsApp, Telegram, Discord, and Slack."
 date: "2026-03-17"

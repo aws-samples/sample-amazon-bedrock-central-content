@@ -79,10 +79,6 @@ resources:
     - title: AWS Model Card — Mistral Large
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-large.html
       type: model-card
-  aws:
-    - title: "Mistral Large 2 is now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/mistral-large-2-is-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Mistral AI Documentation
       url: https://docs.mistral.ai/

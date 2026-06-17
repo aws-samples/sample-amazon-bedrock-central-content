@@ -61,10 +61,6 @@ resources:
     - title: AWS Model Card — Marengo Embed v2.7
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-marengo-embed-v2-7.html
       type: model-card
-  aws:
-    - title: "Twelve Labs models are now available in Amazon Bedrock Marketplace"
-      url: https://aws.amazon.com/blogs/machine-learning/twelve-labs-models-are-now-available-in-amazon-bedrock-marketplace/
-      type: blog
   provider:
     - title: TwelveLabs Marengo Documentation
       url: https://docs.twelvelabs.io/docs/concepts/models/marengo

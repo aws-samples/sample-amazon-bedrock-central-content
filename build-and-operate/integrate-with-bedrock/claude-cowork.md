@@ -1,8 +1,8 @@
 ---
 title: "Claude Cowork"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "claude-cowork"
-description: "Claude's agentic desktop app for knowledge work, running on Amazon Bedrock in your AWS account. Same Claude Desktop experience, zero Anthropic seat licensing."
+description: "Claude's agentic desktop app for knowledge work, running in Amazon Bedrock within your AWS account. Same Claude Desktop experience, zero Anthropic seat licensing."
 date: "2026-04-23"
 services:
   - Amazon Bedrock
@@ -12,37 +12,31 @@ topics:
 resources: []
 ---
 
-# Claude Cowork on Bedrock
+# Claude Cowork in Bedrock
 
-Anthropic's agentic desktop app running on Bedrock in your AWS account. Your auth, your audit, no Anthropic seats.
+Anthropic's agentic desktop app for knowledge work, running entirely in Amazon Bedrock within your AWS account. Your auth, your audit, your billing, no Anthropic seats. Shipped as the standard app plus an MDM-pushed managed configuration.
 
-## What is Cowork
+## Connect to Bedrock
 
-Delegate long-form work: synthesize docs, analyze spreadsheets, run multi-step research. Artifacts, memory, and MCP connectors (Slack, Jira, SharePoint) carry context across sessions.
+Set `inferenceProvider` to `bedrock`, choose a Region and Claude inference profile, and pick a credential model: IAM Identity Center SSO, a named AWS profile, or a Bedrock API key. The principal needs `bedrock:InvokeModel`.
 
-- [Product: What Cowork does](https://claude.com/product/cowork)
-- [Docs: Cowork feature index](https://claude.com/docs/cowork)
+- [Blog: Get started with Claude Cowork in Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/)
+- [Docs: See the full deploy steps & config keys](https://claude.com/docs/cowork/3p/bedrock)
 
-## Roll it out
+## What's supported in Bedrock
 
-Pilot on one device, then fleet via Jamf, Intune, or Group Policy. The AWS blog walks the end-to-end narrative; the AWS solutions guide has the MDM config specifics.
+Cowork & Code tabs, local and remote MCP, plugins, skills, and on-device memory all work. Chat tab, Computer Use, public Skills Marketplace, and first-party connectors (except Microsoft 365) don't.
 
-- [Blog: From developer desks to the whole organization](https://aws.amazon.com/blogs/machine-learning/from-developer-desks-to-the-whole-organization-running-claude-cowork-in-amazon-bedrock/)
-- [Guide: Cowork 3P deployment (CLI, UI, JSON, verification)](https://github.com/aws-solutions-library-samples/guidance-for-claude-code-with-amazon-bedrock/blob/main/assets/docs/COWORK_3P.md)
-- [Docs: Installation & setup](https://claude.com/docs/cowork/3p/installation)
-- [Docs: Configuration reference](https://claude.com/docs/cowork/3p/configuration)
+- [Docs: See the feature matrix](https://claude.com/docs/cowork/3p/feature-matrix)
 
-## AWS building blocks
+## Manage MCPs, plugins & skills
 
-- [Docs: Enable Claude model access in your Region](https://docs.aws.amazon.com/bedrock/latest/userguide/model-access.html)
-- [Docs: Inference profiles (in-region, cross-region, global)](https://docs.aws.amazon.com/bedrock/latest/userguide/inference-profiles.html)
-- [Docs: IAM for Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html)
-- [Docs: Bedrock API keys](https://docs.aws.amazon.com/bedrock/latest/userguide/api-keys.html)
-- [Docs: VPC interface endpoints for network isolation](https://docs.aws.amazon.com/bedrock/latest/userguide/vpc-interface-endpoints.html)
-- [Docs: CloudTrail logging for audit](https://docs.aws.amazon.com/bedrock/latest/userguide/logging-using-cloudtrail.html)
+Push remote MCP servers to all users with `managedMcpServers` and gate each tool with `toolPolicy`; distribute org plugins via the MDM org-plugins directory.
 
-## Dive deeper
+- [Docs: See MCP, plugins, skills & hooks setup](https://claude.com/docs/cowork/3p/extensions)
 
-- [Docs: Cowork on 3P architecture & security](https://claude.com/docs/cowork/3p/overview)
-- [Docs: Telemetry & egress](https://claude.com/docs/cowork/3p/telemetry)
-- [Docs: Models at a glance for per-region availability](https://docs.aws.amazon.com/bedrock/latest/userguide/model-cards.html)
+## Operate: cost & audit
+
+Consumption-billed through AWS. Cap per-device spend with a token window, audit per user via CloudTrail (use SSO or a named profile, not a shared key), and export OpenTelemetry cost events to your collector. Conversation content never reaches Anthropic.
+
+- [Docs: See telemetry & egress](https://claude.com/docs/cowork/3p/telemetry)

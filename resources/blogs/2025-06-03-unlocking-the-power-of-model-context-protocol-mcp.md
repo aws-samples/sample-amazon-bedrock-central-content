@@ -4,6 +4,7 @@ description: "Implement Model Context Protocol (MCP) integration with Amazon Bed
 url: https://aws.amazon.com/blogs/machine-learning/unlocking-the-power-of-model-context-protocol-mcp-on-aws/
 date: '2025-06-03'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/05/23/ML-18605-bedrock-kb-architecture-884x630.png"
+type: "blogs"
 frameworks:
   - "MCP"
   - "Strands"
@@ -12,13 +13,11 @@ services:
   - "Amazon S3"
   - "Amazon DynamoDB"
   - "Amazon CloudWatch"
-  - "Amazon Kendra"
   - "AWS IAM"
 topics:
   - "tool-use"
   - "rag"
   - "knowledge-bases"
-  - "enterprise"
 bedrockFeatures:
   - "Converse API"
   - "Knowledge Bases"

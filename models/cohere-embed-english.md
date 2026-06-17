@@ -51,8 +51,8 @@ codeExamples:
       response = client.invoke_model(
           modelId='cohere.embed-english-v3',
           body=json.dumps({
-              'texts': ['Can you explain the features of Amazon Bedrock?'],
-              'input_type': 'search_query'
+              'texts': ['What are the different services that you offer?'],
+              'input_type': 'search_document'
           })
       )
       print(json.loads(response['body'].read()))
@@ -61,13 +61,6 @@ resources:
     - title: AWS Model Card — Embed English
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-embed-english.html
       type: model-card
-  aws:
-    - title: "Cohere Embed and Rerank models are now available on Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/cohere-embed-and-rerank-models-are-now-available-on-amazon-bedrock/
-      type: blog
-    - title: "Build an AI-powered semantic search pipeline using Cohere's Embed 3"
-      url: https://aws.amazon.com/blogs/machine-learning/build-an-ai-powered-semantic-search-pipeline-using-coheres-embed-3-model-and-amazon-opensearch-with-a-vector-database/
-      type: blog
   provider:
     - title: Cohere Documentation
       url: https://docs.cohere.com/

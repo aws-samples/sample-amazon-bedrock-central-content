@@ -5,6 +5,4 @@ url: https://www.youtube.com/watch?v=C5mRLJGM0YQ
 date: '2026-03-18'
 image: "https://img.youtube.com/vi/C5mRLJGM0YQ/hqdefault.jpg"
 type: "videos"
-topics:
-  - "enterprise"
 ---

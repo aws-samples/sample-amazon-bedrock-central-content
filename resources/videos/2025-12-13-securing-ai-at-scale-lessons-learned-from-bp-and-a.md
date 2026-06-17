@@ -1,15 +1,11 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-13'
-description: This session explores the challenges and strategies for securing AI systems
-  at scale, drawing on real-world experiences from bp and AWS. Attendees will gain
-  insights into best practices for managing risk and leveraging opportunities as AI
-  evolves from simple chatbots to autonomous agents.
-image: https://img.youtube.com/vi/omQ2t4stQOY/hqdefault.jpg
-title: 'Securing AI at Scale: Lessons learned from bp and AWS | AWS Events'
-- security
-- multi-agent
+title: "Securing AI at Scale: Lessons learned from bp and AWS | AWS Events"
+description: "This session explores how bp and AWS are securing AI systems at scale, covering strategies for human-agent collaboration, advanced identity management, threat detection, and implementing controls that balance innovation with security."
 url: https://www.youtube.com/watch?v=omQ2t4stQOY
+date: '2025-12-13'
+image: "https://img.youtube.com/vi/omQ2t4stQOY/hqdefault.jpg"
+type: "videos"
+topics:
+  - "security"
+  - "multi-agent"
 ---
-

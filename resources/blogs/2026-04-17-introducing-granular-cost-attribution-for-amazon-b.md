@@ -8,9 +8,18 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS IAM"
+  - "AWS Lambda"
+  - "Amazon Cognito"
 topics:
   - "cost-optimization"
   - "enterprise"
-  - "observability"
-contentFormat: "article"
+  - "security"
+models:
+  - "Claude Sonnet 4.6"
+  - "Nova Lite"
+modelProviders:
+  - "Anthropic"
+  - "Amazon"
+developerTools:
+  - "Claude Code"
 ---

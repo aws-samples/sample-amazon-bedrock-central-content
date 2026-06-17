@@ -4,6 +4,7 @@ description: "This post explores how to build an interactive tic-tac-toe game ca
 url: https://aws.amazon.com/blogs/machine-learning/bringing-tic-tac-toe-to-life-with-aws-ai-services/
 date: '2025-11-18'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/11/18/IMG_3145-1-840x630.jpeg"
+type: "blogs"
 frameworks:
   - "Strands"
 services:
@@ -14,6 +15,4 @@ services:
 topics:
   - "multi-agent"
   - "tool-use"
-bedrockFeatures:
-  - "Agents"
 ---

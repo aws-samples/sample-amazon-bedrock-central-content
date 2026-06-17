@@ -7,7 +7,7 @@ specifications:
   modelId: qwen.qwen3-coder-30b-a3b-v1:0
   lifecycle: Active
   launchDate: Jul 31, 2025
-  contextWindow: 128K tokens
+  contextWindow: 256K tokens
   maxOutputTokens: 16K
   streaming: true
   apisSupported:
@@ -33,6 +33,7 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-central-1
     - eu-north-1
     - eu-south-1
@@ -80,6 +81,17 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='qwen.qwen3-coder-30b-a3b-instruct',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Qwen3-Coder-30B-A3B-Instruct
@@ -95,8 +107,4 @@ resources:
     - title: Qwen3 Coder Blog
       url: https://qwenlm.github.io/blog/qwen3-coder/
       type: docs
-  aws:
-    - title: "Alibaba Cloud's Qwen3 models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/alibaba-clouds-qwen3-models-are-now-available-in-amazon-bedrock/
-      type: blog
 ---

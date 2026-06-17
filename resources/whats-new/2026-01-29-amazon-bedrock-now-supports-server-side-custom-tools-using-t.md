@@ -4,5 +4,6 @@ description: "Amazon Bedrock now supports server-side custom tools using the Res
 url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-bedrock-server-side-custom-tools-responses-api
 date: '2026-01-29'
 services:
-- Amazon Bedrock
+  - "Amazon Bedrock"
+  - "AWS Lambda"
 ---

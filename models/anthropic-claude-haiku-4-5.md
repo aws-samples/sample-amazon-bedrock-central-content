@@ -15,8 +15,10 @@ specifications:
   apisSupported:
     - Invoke
     - Converse
+    - Messages
   endpointsSupported:
     - bedrock-runtime
+    - bedrock-mantle
   inputModalities:
     - Image
     - Text
@@ -37,8 +39,14 @@ specifications:
     - au
     - eu
     - global
+    - jp
     - us
-  singleRegions: []
+  singleRegions:
+    - ap-northeast-1
+    - ap-southeast-4
+    - eu-north-1
+    - eu-west-1
+    - us-east-1
   crossRegionInference:
     - af-south-1
     - ap-east-2
@@ -90,6 +98,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='anthropic.claude-haiku-4-5-20251001-v1:0',
           body=json.dumps({
+              'anthropic_version': 'bedrock-2023-05-31',
               'messages': [{'role': 'user',
                   'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024
@@ -110,6 +119,22 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Messages API
+    language: python
+    code: |
+      # pip install -U "anthropic[bedrock]"
+      # export AWS_BEARER_TOKEN_BEDROCK="<your Bedrock API key>"
+      from anthropic import AnthropicBedrockMantle
+
+      client = AnthropicBedrockMantle(aws_region="us-east-1")
+
+      message = client.messages.create(
+          model="anthropic.claude-haiku-4-5",
+          max_tokens=1024,
+          messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}],
+      )
+
+      print(message.content[0].text)
 resources:
   documentation:
     - title: AWS Model Card — Claude Haiku 4.5

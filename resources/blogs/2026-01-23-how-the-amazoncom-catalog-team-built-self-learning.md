@@ -14,9 +14,7 @@ topics:
   - "multi-agent"
   - "evaluation"
   - "enterprise"
-contentFormat: "article"
-bedrockFeatures:
-  - "Agents"
+  - "cost-optimization"
 modelProviders:
   - "Amazon"
   - "Anthropic"

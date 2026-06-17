@@ -51,8 +51,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='cohere.command-r-plus-v1:0',
           body=json.dumps({
-              'messages': [{'role': 'user',
-                  'content': 'Can you explain the features of Amazon Bedrock?'}],
+              'message': 'Can you explain the features of Amazon Bedrock?',
               'max_tokens': 1024
           })
       )

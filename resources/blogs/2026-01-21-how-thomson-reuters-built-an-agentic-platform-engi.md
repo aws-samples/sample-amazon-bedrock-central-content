@@ -16,7 +16,4 @@ topics:
   - "multi-agent"
   - "enterprise"
   - "memory"
-bedrockFeatures:
-  - "Agents"
-  - "Memory"
 ---

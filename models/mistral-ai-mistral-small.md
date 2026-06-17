@@ -69,10 +69,6 @@ resources:
     - title: AWS Model Card — Mistral Small
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-mistral-small.html
       type: model-card
-  aws:
-    - title: "Mistral Small is now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/mistral-small-is-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Mistral AI Documentation
       url: https://docs.mistral.ai/

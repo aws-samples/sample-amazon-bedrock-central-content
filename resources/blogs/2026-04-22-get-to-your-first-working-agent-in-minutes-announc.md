@@ -5,22 +5,19 @@ url: https://aws.amazon.com/blogs/machine-learning/get-to-your-first-working-age
 date: '2026-04-22'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/22/ml-20892-1120x630.png"
 type: "blogs"
-frameworks:
-  - "Strands"
-  - "LangGraph"
-  - "CrewAI"
-  - "LlamaIndex"
 services:
-  - "Amazon Bedrock AgentCore"
   - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
   - "AWS CDK"
 topics:
   - "deployment"
   - "coding-agents"
-  - "tool-use"
-contentFormat: "article"
-bedrockFeatures:
-  - "Agents"
+frameworks:
+  - "Strands"
+  - "LangGraph"
+  - "LlamaIndex"
+  - "CrewAI"
 developerTools:
   - "Claude Code"
+  - "Cursor"
 ---

@@ -53,10 +53,6 @@ resources:
     - title: AWS Model Card — Nova 2 Sonic
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-2-sonic.html
       type: model-card
-  aws:
-    - title: "Amazon Nova foundation models now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/amazon-nova-foundation-models-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Amazon Nova User Guide
       url: https://docs.aws.amazon.com/nova/latest/userguide/

@@ -4,16 +4,15 @@ description: "Explore how AWS doubles investment in their Generative AI Innovati
 url: https://aws.amazon.com/blogs/machine-learning/aws-doubles-investment-in-aws-generative-ai-innovation-center-marking-two-years-of-customer-success/
 date: '2025-07-15'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/14/FINAL-BLOG-AND-SOCIAL-MEDIA-IMAGE.png"
-frameworks:
-  - "MCP"
+type: "blogs"
 services:
   - "Amazon Bedrock"
 topics:
-  - "enterprise"
-modelProviders:
-  - "Anthropic"
-  - "Amazon"
+  - "multi-agent"
 models:
   - "Claude 3.5 Sonnet"
   - "Amazon Nova"
+modelProviders:
+  - "Anthropic"
+  - "Amazon"
 ---

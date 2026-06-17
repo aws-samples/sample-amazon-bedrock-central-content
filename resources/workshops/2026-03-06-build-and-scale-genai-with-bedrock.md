@@ -7,6 +7,11 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
+  - "AWS Lambda"
+  - "Amazon API Gateway"
+  - "Amazon DynamoDB"
+  - "Amazon Cognito"
 topics:
   - "prompt-engineering"
+  - "rag"
 ---

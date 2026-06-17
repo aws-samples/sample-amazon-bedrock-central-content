@@ -1,6 +1,6 @@
 ---
 title: "Add capabilities"
-subtitle: "Amazon Bedrock provides additional capabilities to enhance your generative AI applications."
+subtitle: "Add capabilities like guardrails, caching, and streaming to your API calls."
 type: "get-started"
 
 knobs:
@@ -17,8 +17,9 @@ knobs:
     name: "Streaming"
     desc: "Stream the response in real time instead of waiting for the full completion."
 
-footer:
-  text: "Bedrock also offers Knowledge Bases, Agents, and Flows to orchestrate your applications."
-  url: "https://docs.aws.amazon.com/bedrock/latest/userguide/features.html"
-  label: "Learn more"
+cta:
+  heading: "Go from API calls to production applications."
+  body: "Build and deploy agents, bring your own models, and ground them in your data."
+  url: "https://aws.amazon.com/bedrock/"
+  label: "Explore Amazon Bedrock"
 ---

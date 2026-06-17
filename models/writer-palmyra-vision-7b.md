@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 4K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -29,6 +28,16 @@ specifications:
     - us-east-1
     - us-east-2
     - us-west-2
+    - ap-northeast-1
+    - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-central-1
+    - eu-north-1
+    - eu-south-1
+    - eu-west-1
+    - eu-west-2
+    - sa-east-1
   crossRegionInference: []
   crossRegionProfiles: []
   bedrockFeatures: ['guardrails']
@@ -39,17 +48,6 @@ specifications:
   pricingTier: "$$"
   pricingUnit: "token"
 codeExamples:
-  - title: Responses API
-    language: python
-    code: |
-      from openai import OpenAI
-
-      client = OpenAI()
-      response = client.responses.create(
-          model='writer.palmyra-vision-7b',
-          input='Can you explain the features of Amazon Bedrock?'
-      )
-      print(response)
   - title: Chat Completions API
     language: python
     code: |
@@ -96,10 +94,6 @@ resources:
     - title: AWS Model Card — Palmyra Vision 7B
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-vision-7b.html
       type: model-card
-  aws:
-    - title: "Introducing Writer Palmyra models in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/introducing-writer-palmyra-models-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Writer Palmyra Vision Documentation
       url: https://writer.com/llms/palmyra-vision/

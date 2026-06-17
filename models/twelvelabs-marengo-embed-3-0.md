@@ -14,7 +14,6 @@ specifications:
   endpointsSupported:
     - bedrock-runtime
   inputModalities:
-    - Audio
     - Image
     - Speech
     - Text
@@ -29,6 +28,7 @@ specifications:
     - us
   singleRegions:
     - ap-northeast-2
+    - eu-west-1
     - us-east-1
   crossRegionInference:
     - eu-central-1
@@ -64,10 +64,6 @@ resources:
     - title: AWS Model Card — Marengo Embed 3.0
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-twelvelabs-marengo-embed-3-0.html
       type: model-card
-  aws:
-    - title: "Twelve Labs models are now available in Amazon Bedrock Marketplace"
-      url: https://aws.amazon.com/blogs/machine-learning/twelve-labs-models-are-now-available-in-amazon-bedrock-marketplace/
-      type: blog
   provider:
     - title: TwelveLabs Marengo Documentation
       url: https://docs.twelvelabs.io/docs/concepts/models/marengo

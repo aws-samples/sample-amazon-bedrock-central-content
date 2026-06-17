@@ -1,18 +1,16 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-04'
-description: This session will guide attendees through building useful and reliable
-  agentic systems with Amazon Nova, covering how to develop intelligent agents capable
-  of reasoning, planning, and executing complex workflows for enterprise applications.
-image: https://img.youtube.com/vi/SF-fxd9fzpo/hqdefault.jpg
-modelProviders:
-- Amazon
-models:
-- Nova
-services:
-- Amazon Bedrock
-title: AWS re:Invent 2025 - Build useful, reliable agents with Amazon Nova (AIM372)
+title: "AWS re:Invent 2025 - Build useful, reliable agents with Amazon Nova (AIM372)"
+description: "Learn about core model capabilities needed to build production-ready agents with Amazon Nova, including browser-forward agents and multi-agent systems for enterprise applications."
 url: https://www.youtube.com/watch?v=SF-fxd9fzpo
+date: '2025-12-04'
+image: "https://img.youtube.com/vi/SF-fxd9fzpo/hqdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock"
+topics:
+  - "multi-agent"
+models:
+  - "Amazon Nova"
+modelProviders:
+  - "Amazon"
 ---
-

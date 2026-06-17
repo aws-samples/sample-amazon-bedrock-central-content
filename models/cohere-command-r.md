@@ -5,7 +5,7 @@ specifications:
   description: Command R is Cohere's scalable LLM optimized for retrieval-augmented generation and tool use in enterprise applications with a 128K context window.
   provider: Cohere
   modelId: cohere.command-r-v1:0
-  lifecycle: Active
+  lifecycle: Legacy
   launchDate: Aug 2024
   contextWindow: 128K tokens
   knowledgeCutoff: Mar 2024
@@ -51,8 +51,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='cohere.command-r-v1:0',
           body=json.dumps({
-              'messages': [{'role': 'user',
-                  'content': 'Can you explain the features of Amazon Bedrock?'}],
+              'message': 'Can you explain the features of Amazon Bedrock?',
               'max_tokens': 1024
           })
       )
@@ -76,10 +75,6 @@ resources:
     - title: AWS Model Card — Command R
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-cohere-command-r.html
       type: model-card
-  aws:
-    - title: "Cohere models are now available on Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/cohere-models-are-now-available-on-amazon-bedrock/
-      type: blog
   provider:
     - title: Cohere Documentation
       url: https://docs.cohere.com/

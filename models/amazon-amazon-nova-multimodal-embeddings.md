@@ -8,6 +8,8 @@ specifications:
   lifecycle: Active
   launchDate: Oct 28, 2025
   streaming: false
+  apisSupported:
+    - StartAsyncInvoke
   endpointsSupported:
     - bedrock-runtime
   inputModalities:
@@ -24,31 +26,23 @@ specifications:
     - us-east-1
   crossRegionInference: []
 codeExamples:
-  - title: Invoke API
+  - title: StartAsyncInvoke API
     language: python
     code: |
-      import json
       import boto3
 
       client = boto3.client('bedrock-runtime', region_name='us-east-1')
-      response = client.invoke_model(
+      response = client.start_async_invoke(
           modelId='amazon.nova-2-multimodal-embeddings-v1:0',
-          body=json.dumps({
-              'inputText': 'Can you explain the features of Amazon Bedrock?',
-              'embeddingConfig': {'outputEmbeddingLength': 1024}
-          })
+          modelInput={},
+          outputDataConfig={'s3OutputDataConfig': {'s3Uri': 's3://your-bucket/output/'}}
       )
-      result = json.loads(response['body'].read())
-      print(f"Embedding dimension: {len(result['embedding'])}")
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Amazon Nova Multimodal Embeddings
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-amazon-nova-multimodal-embeddings.html
       type: model-card
-  aws:
-    - title: "Amazon Nova foundation models now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/amazon-nova-foundation-models-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Amazon Nova User Guide
       url: https://docs.aws.amazon.com/nova/latest/userguide/

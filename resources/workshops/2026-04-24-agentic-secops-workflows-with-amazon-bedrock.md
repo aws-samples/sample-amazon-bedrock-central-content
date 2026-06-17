@@ -7,12 +7,7 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
-  - "AWS Lambda"
-  - "AWS IAM"
 topics:
-  - "multi-agent"
   - "security"
-  - "tool-use"
-bedrockFeatures:
-  - "Agents"
+  - "multi-agent"
 ---

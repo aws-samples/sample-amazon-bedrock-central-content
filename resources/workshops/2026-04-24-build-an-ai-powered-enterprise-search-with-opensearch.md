@@ -8,10 +8,10 @@ type: "workshops"
 services:
   - "Amazon Bedrock"
   - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
 topics:
   - "rag"
-  - "enterprise"
-  - "multimodal"
+  - "search"
 bedrockFeatures:
-  - "Embeddings"
+  - "Knowledge Bases"
 ---

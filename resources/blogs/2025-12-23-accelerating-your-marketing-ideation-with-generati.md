@@ -10,12 +10,13 @@ services:
   - "AWS Lambda"
   - "Amazon DynamoDB"
   - "Amazon API Gateway"
+  - "Amazon Cognito"
   - "Amazon CloudWatch"
   - "AWS IAM"
 topics:
   - "multimodal"
   - "prompt-engineering"
-contentFormat: "article"
+  - "content-generation"
 modelProviders:
   - "Amazon"
 models:

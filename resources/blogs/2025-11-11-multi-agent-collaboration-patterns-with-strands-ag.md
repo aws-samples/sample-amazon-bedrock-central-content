@@ -4,6 +4,7 @@ description: "This post explores four key collaboration patterns for multi-agent
 url: https://aws.amazon.com/blogs/machine-learning/multi-agent-collaboration-patterns-with-strands-agents-and-amazon-nova/
 date: '2025-11-11'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/10/17/multi-agent-nova-image-4-1260x618.jpg"
+type: "blogs"
 frameworks:
   - "Strands"
 services:
@@ -11,6 +12,7 @@ services:
 topics:
   - "multi-agent"
   - "tool-use"
+  - "multimodal"
 modelProviders:
   - "Amazon"
 models:

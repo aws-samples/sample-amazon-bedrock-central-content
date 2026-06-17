@@ -7,12 +7,12 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "Amazon Aurora"
   - "Amazon S3"
 topics:
   - "rag"
   - "security"
   - "enterprise"
-contentFormat: "article"
 bedrockFeatures:
   - "Embeddings"
 modelProviders:

@@ -10,13 +10,17 @@ services:
 topics:
   - "evaluation"
   - "chatbots"
-contentFormat: "article"
+bedrockFeatures:
+  - "Converse API"
+  - "Model Evaluation"
 modelProviders:
   - "Amazon"
+  - "Anthropic"
 models:
   - "Nova 2 Lite"
   - "Nova Lite"
   - "Nova Micro"
   - "Nova Premier"
   - "Nova Pro"
+  - "Claude Sonnet 4.5"
 ---

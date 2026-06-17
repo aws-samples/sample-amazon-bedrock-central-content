@@ -4,6 +4,7 @@ description: "Readers will learn how to leverage the Cohere Embed 4 multimodal e
 url: https://aws.amazon.com/blogs/machine-learning/powering-enterprise-search-with-the-cohere-embed-4-multimodal-embeddings-model-in-amazon-bedrock/
 date: '2025-11-11'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/11/06/ml-19821-image1.png"
+type: "blogs"
 frameworks:
   - "Strands"
 services:
@@ -15,6 +16,7 @@ topics:
   - "rag"
   - "multimodal"
   - "enterprise"
+  - "search"
 bedrockFeatures:
   - "Cross-Region Inference"
   - "Embeddings"

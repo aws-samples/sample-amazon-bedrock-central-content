@@ -7,8 +7,4 @@ image: "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a835
 type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "Amazon EKS"
-  - "Amazon OpenSearch"
-  - "Amazon S3"
-contentFormat: "article"
 ---

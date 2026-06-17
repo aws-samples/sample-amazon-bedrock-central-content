@@ -10,13 +10,13 @@ services:
   - "Amazon S3"
   - "Amazon OpenSearch"
   - "AWS Lambda"
+  - "AWS Fargate"
 topics:
   - "multi-agent"
   - "rag"
-  - "enterprise"
-modelProviders:
-  - "Anthropic"
 models:
   - "Claude 3.7 Sonnet"
   - "Claude Sonnet 4"
+modelProviders:
+  - "Anthropic"
 ---

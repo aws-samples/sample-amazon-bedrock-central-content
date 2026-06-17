@@ -10,12 +10,9 @@ services:
   - "Amazon S3"
 topics:
   - "multimodal"
-contentFormat: "article"
-bedrockFeatures:
-  - "Embeddings"
-modelProviders:
-  - "Amazon"
+  - "search"
 models:
   - "Amazon Nova"
-  - "Nova 2"
+modelProviders:
+  - "Amazon"
 ---

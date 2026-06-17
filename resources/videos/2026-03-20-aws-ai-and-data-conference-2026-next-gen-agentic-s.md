@@ -8,5 +8,6 @@ type: "videos"
 services:
   - "Amazon OpenSearch"
 topics:
+  - "search"
   - "enterprise"
 ---

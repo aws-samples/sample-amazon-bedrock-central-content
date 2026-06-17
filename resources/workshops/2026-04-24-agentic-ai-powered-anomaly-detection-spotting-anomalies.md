@@ -7,12 +7,11 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
-  - "AWS Lambda"
-  - "Amazon CloudWatch"
+  - "Amazon Bedrock AgentCore"
+  - "Amazon Athena"
 topics:
-  - "streaming"
-  - "observability"
   - "multi-agent"
-bedrockFeatures:
-  - "Agents"
+  - "streaming"
+frameworks:
+  - "Strands"
 ---

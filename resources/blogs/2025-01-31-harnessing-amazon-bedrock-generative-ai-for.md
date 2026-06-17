@@ -4,24 +4,25 @@ description: "Build a resilient supply chain monitoring system using Amazon Bedr
 url: https://aws.amazon.com/blogs/machine-learning/harnessing-amazon-bedrock-generative-ai-for-resilient-supply-chain/
 date: '2025-01-31'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/01/31/hmls-1120x630.png"
+type: "blogs"
 services:
   - "Amazon Bedrock"
-  - "Amazon S3"
   - "AWS Lambda"
+  - "Amazon S3"
   - "Amazon DynamoDB"
+  - "Amazon Lex"
   - "AWS CloudFormation"
-  - "AWS IAM"
+  - "AWS CDK"
 topics:
   - "rag"
-  - "enterprise"
   - "security"
 bedrockFeatures:
   - "Flows"
   - "Knowledge Bases"
   - "Agents"
   - "Guardrails"
-modelProviders:
-  - "Anthropic"
+  - "Prompt Management"
 models:
   - "Claude 3.5 Sonnet"
+  - "Claude 3 Sonnet"
 ---

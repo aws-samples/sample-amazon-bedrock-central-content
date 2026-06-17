@@ -10,13 +10,10 @@ services:
   - "AWS IAM"
 topics:
   - "security"
-  - "enterprise"
-  - "deployment"
-contentFormat: "guide"
 bedrockFeatures:
   - "Cross-Region Inference"
-modelProviders:
-  - "Anthropic"
 models:
   - "Claude Sonnet 4.5"
+modelProviders:
+  - "Anthropic"
 ---

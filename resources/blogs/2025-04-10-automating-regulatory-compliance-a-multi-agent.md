@@ -4,6 +4,7 @@ description: "Build a multi-agent compliance automation system using Amazon Bedr
 url: https://aws.amazon.com/blogs/machine-learning/automating-regulatory-compliance-a-multi-agent-solution-using-amazon-bedrock-and-crewai/
 date: '2025-04-10'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/04/03/image001.png"
+type: "blogs"
 frameworks:
   - "CrewAI"
 services:
@@ -17,6 +18,7 @@ topics:
 bedrockFeatures:
   - "Knowledge Bases"
   - "Guardrails"
+  - "Agents"
   - "Embeddings"
 modelProviders:
   - "Amazon"

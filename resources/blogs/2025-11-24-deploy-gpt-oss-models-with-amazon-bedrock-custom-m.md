@@ -11,8 +11,8 @@ services:
   - "AWS IAM"
 topics:
   - "deployment"
-  - "fine-tuning"
-contentFormat: "article"
 bedrockFeatures:
   - "Custom Models"
+models:
+  - "Llama 3.1"
 ---

@@ -15,12 +15,12 @@ services:
   - "AWS CDK"
 topics:
   - "multimodal"
-contentFormat: "article"
+  - "search"
+  - "rag"
 bedrockFeatures:
   - "Embeddings"
 modelProviders:
   - "Amazon"
 models:
   - "Amazon Nova"
-  - "Nova 2"
 ---

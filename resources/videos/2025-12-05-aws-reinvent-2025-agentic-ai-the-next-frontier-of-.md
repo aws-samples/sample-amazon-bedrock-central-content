@@ -1,13 +1,14 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-05'
-description: This session explores Agentic AI, a major evolution in artificial intelligence
-  where autonomous agents perform intelligent orchestration rather than just task
-  execution. Attendees will learn how AWS enables this paradigm shift and the key
-  services and concepts that power Agentic AI in the cloud.
-image: https://img.youtube.com/vi/vl3glH45lsU/hqdefault.jpg
-title: 'AWS re:Invent 2025 - Agentic AI: The Next Frontier of Cloud Intelligence (AIM342)'
+title: "AWS re:Invent 2025 - Agentic AI: The Next Frontier of Cloud Intelligence (AIM342)"
+description: "Explores how Agentic AI represents a major evolution in artificial intelligence where autonomous agents move beyond task execution to intelligent orchestration, powered by AWS services including Amazon Bedrock, Lambda, and Step Functions for reasoning, planning, and acting in dynamic business environments."
 url: https://www.youtube.com/watch?v=vl3glH45lsU
+date: '2025-12-05'
+image: "https://img.youtube.com/vi/vl3glH45lsU/hqdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock"
+  - "AWS Lambda"
+  - "AWS Step Functions"
+topics:
+  - "enterprise"
 ---
-

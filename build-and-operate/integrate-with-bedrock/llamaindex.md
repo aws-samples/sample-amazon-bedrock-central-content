@@ -1,6 +1,6 @@
 ---
 title: "LlamaIndex"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "llamaindex"
 description: "Connect LlamaIndex data frameworks to Amazon Bedrock for indexing, retrieval, and query pipelines over your data."
 date: "2026-03-06"

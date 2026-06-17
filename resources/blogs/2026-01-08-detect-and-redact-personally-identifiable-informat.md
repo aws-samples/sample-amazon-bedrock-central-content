@@ -8,17 +8,14 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "Amazon S3"
   - "Amazon DynamoDB"
   - "Amazon API Gateway"
+  - "Amazon S3"
   - "Amazon CloudWatch"
   - "AWS CloudFormation"
   - "AWS IAM"
-  - "AWS CDK"
 topics:
   - "security"
-  - "enterprise"
-contentFormat: "article"
 bedrockFeatures:
   - "Guardrails"
 ---

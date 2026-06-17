@@ -10,19 +10,12 @@ services:
   - "Amazon DynamoDB"
   - "AWS Step Functions"
 topics:
+  - "multimodal"
   - "cost-optimization"
-  - "prompt-engineering"
-  - "enterprise"
-  - "evaluation"
-contentFormat: "article"
 bedrockFeatures:
   - "Prompt Caching"
-modelProviders:
-  - "Amazon"
-  - "Anthropic"
 models:
-  - "Nova Lite"
   - "Nova Pro"
-  - "Nova Premier"
+  - "Nova Lite"
   - "Claude 3.7 Sonnet"
 ---

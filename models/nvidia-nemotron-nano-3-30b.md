@@ -7,11 +7,10 @@ specifications:
   modelId: nvidia.nemotron-nano-3-30b
   lifecycle: Active
   launchDate: Dec 15, 2025
-  contextWindow: 128K tokens
+  contextWindow: 256K tokens
   maxOutputTokens: 8K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -29,18 +28,27 @@ specifications:
     - flows
     - guardrails
     - model-evaluation
+  crossRegionProfiles:
+    - us-gov
   singleRegions:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-central-1
+    - eu-north-1
     - eu-south-1
     - eu-west-1
     - eu-west-2
     - sa-east-1
     - us-east-1
     - us-east-2
+    - us-gov-west-1
     - us-west-2
-  crossRegionInference: []
+  crossRegionInference:
+    - us-gov-east-1
+    - us-gov-west-1
   pricingInputPer1k: 0.00006
   pricingOutputPer1k: 0.00012
   pricingPer1k: 0.00018
@@ -78,17 +86,24 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='nvidia.nemotron-nano-3-30b',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Nemotron Nano 3 30B
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-nvidia-nemotron-nano-3-30b.html
       type: model-card
-  aws:
-    - title: "NVIDIA Nemotron models now available on Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/nvidia-nemotron-models-now-available-on-amazon-bedrock/
-      type: blog
   provider:
-    - title: NVIDIA Nemotron Models
-      url: https://www.nvidia.com/en-us/ai/llama-nemotron/
+    - title: NVIDIA Nemotron Nano 3 30B
+      url: https://build.nvidia.com/nvidia/nemotron-3-nano-30b-a3b/modelcard
       type: docs
 ---

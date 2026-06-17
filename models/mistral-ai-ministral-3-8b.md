@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 8K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -34,6 +33,10 @@ specifications:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-central-1
+    - eu-north-1
     - eu-south-1
     - eu-west-1
     - eu-west-2
@@ -79,17 +82,25 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='mistral.ministral-3-8b-instruct',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Ministral 3 8B
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-mistral-ai-ministral-3-8b.html
       type: model-card
-  aws:
-    - title: "Mistral AI models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/mistral-ai-models-are-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Mistral AI Documentation
       url: https://docs.mistral.ai/
       type: docs
 ---
+</content>

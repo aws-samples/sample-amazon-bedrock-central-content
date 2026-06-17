@@ -4,16 +4,17 @@ description: "Build an intelligent logistics agent using Amazon Bedrock that han
 url: https://aws.amazon.com/blogs/machine-learning/the-diva-logistics-agent-powered-by-amazon-bedrock/
 date: '2025-08-07'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/08/07/ml-17898-1120x630.jpg"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "Amazon S3"
   - "Amazon OpenSearch"
+  - "Amazon S3"
   - "Amazon API Gateway"
-  - "AWS IAM"
+  - "Amazon CloudWatch"
 topics:
   - "rag"
-  - "enterprise"
+  - "chatbots"
 bedrockFeatures:
   - "Agents"
   - "Knowledge Bases"

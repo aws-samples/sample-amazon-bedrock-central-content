@@ -1,13 +1,18 @@
 ---
 title: "Deep-dive within Amazon Bedrock security architecture"
-description: "Learn about the security architecture of Amazon Bedrock, including how it protects data, implements access controls, and ensures secure deployment of generative AI applications."
+description: "A deep-dive into Amazon Bedrock's security architecture covering compute capacity models, request flow, data encryption, fine-tuning isolation, and Guardrails for securing prompts and responses."
 url: https://builder.aws.com/content/2ibjw3otz5LFNJsARUtx9LkjjxG/deep-dive-within-amazon-bedrock-security-architecture
 date: ''
 image: "https://builder.aws.com/assets/og-hiXAX-on.png"
+type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "AWS IAM"
+  - "Amazon CloudWatch"
 topics:
   - "security"
   - "enterprise"
-contentFormat: "article"
+bedrockFeatures:
+  - "Guardrails"
+  - "Custom Models"
 ---

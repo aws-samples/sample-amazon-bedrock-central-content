@@ -7,6 +7,7 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 frameworks:
   - "MCP"
+  - "Langfuse"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
@@ -14,14 +15,13 @@ services:
   - "Amazon OpenSearch"
   - "Amazon CloudWatch"
   - "Amazon EKS"
+  - "Amazon ECS"
   - "Amazon Bedrock AgentCore"
 topics:
   - "deployment"
   - "evaluation"
   - "observability"
-  - "enterprise"
   - "cost-optimization"
-contentFormat: "article"
 bedrockFeatures:
   - "Knowledge Bases"
   - "Guardrails"

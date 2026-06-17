@@ -10,12 +10,13 @@ frameworks:
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
+  - "Amazon Cognito"
   - "AWS Lambda"
 topics:
   - "memory"
   - "knowledge-bases"
   - "rag"
+  - "tool-use"
 bedrockFeatures:
   - "Knowledge Bases"
-  - "Agents"
 ---

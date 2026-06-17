@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 8K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -34,6 +33,10 @@ specifications:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-central-1
+    - eu-north-1
     - eu-south-1
     - eu-west-1
     - eu-west-2
@@ -79,15 +82,22 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='google.gemma-3-4b-it',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Gemma 3 4B IT
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-google-gemma-3-4b-it.html
       type: model-card
-  aws:
-    - title: "Gemma models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/gemma-models-are-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: Google Gemma Documentation
       url: https://ai.google.dev/gemma/docs

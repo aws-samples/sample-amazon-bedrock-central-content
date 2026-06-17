@@ -1,14 +1,20 @@
 ---
 title: "Serverless AI Image Editing with Amazon Bedrock"
-description: "Learn how to build a serverless AI-powered image editing application using Amazon Bedrock's image generation and manipulation capabilities."
+description: "Deploy a serverless web application for AI-powered image editing using Amazon Bedrock's Titan Image Generator G1 v2 model, supporting Inpainting and Outpainting via text prompts and masking."
 url: https://builder.aws.com/content/36emNnhFMpOQdTdxx4NYzBC4BRt/serverless-ai-image-editing-with-amazon-bedrock
 date: ''
 image: "https://builder.aws.com/assets/og-hiXAX-on.png"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
+  - "Amazon API Gateway"
+  - "Amazon DynamoDB"
+  - "Amazon Cognito"
 topics:
-  - "content-generation"
   - "multimodal"
-contentFormat: "article"
+models:
+  - "Titan Image"
+modelProviders:
+  - "Amazon"
 ---

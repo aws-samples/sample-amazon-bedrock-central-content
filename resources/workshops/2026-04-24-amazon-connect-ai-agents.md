@@ -5,16 +5,16 @@ url: https://catalog.workshops.aws/workshops/9657f1e6-9357-4d9f-8733-d334ebec0aa
 date: '2026-04-24'
 image: "/images/aws-logo_2.svg"
 type: "workshops"
-frameworks:
-  - "MCP"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
 topics:
-  - "voice-agents"
   - "tool-use"
-  - "knowledge-bases"
+  - "voice-agents"
 bedrockFeatures:
-  - "Agents"
   - "Knowledge Bases"
+models:
+  - "Nova Sonic"
+frameworks:
+  - "MCP"
 ---

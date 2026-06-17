@@ -7,14 +7,17 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "AWS IAM"
 topics:
   - "deployment"
-contentFormat: "guide"
+  - "security"
 bedrockFeatures:
   - "Cross-Region Inference"
+  - "Converse API"
 modelProviders:
   - "Anthropic"
 models:
   - "Claude Sonnet 4.5"
   - "Claude Haiku 4.5"
+  - "Claude 3.7 Sonnet"
 ---

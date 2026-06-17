@@ -9,12 +9,9 @@ services:
   - "Amazon Bedrock"
 topics:
   - "fine-tuning"
-  - "enterprise"
-contentFormat: "article"
+  - "model-customization"
 bedrockFeatures:
   - "Custom Models"
-modelProviders:
-  - "Amazon"
 models:
   - "Amazon Nova"
 ---

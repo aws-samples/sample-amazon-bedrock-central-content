@@ -1,16 +1,19 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2025-12-03'
-description: This video introduces Amazon Bedrock AgentCore, providing an overview
-  of its capabilities and how it enables the building of agentic AI applications on
-  AWS. Viewers will learn the foundational concepts and key features that power agent-driven
-  workflows.
-image: https://img.youtube.com/vi/9LF6rz6Fe1Q/hqdefault.jpg
-services:
-- Amazon Bedrock
-- Amazon Bedrock AgentCore
-title: Amazon Bedrock Agentcore - Introduction | Amazon Web Services
+title: "Amazon Bedrock Agentcore - Introduction | Amazon Web Services"
+description: "Episode 1 of an 8-part series introducing Amazon Bedrock AgentCore, covering its core services—Runtime, Memory, Gateway, Identity, Observability, Code Interpreter, and Browser tool—and how it works with any agent framework and foundation model."
 url: https://www.youtube.com/watch?v=9LF6rz6Fe1Q
+date: '2025-12-03'
+image: "https://img.youtube.com/vi/9LF6rz6Fe1Q/hqdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
+topics:
+  - "deployment"
+  - "memory"
+  - "observability"
+  - "security"
+frameworks:
+  - "Strands"
+  - "LangGraph"
 ---
-

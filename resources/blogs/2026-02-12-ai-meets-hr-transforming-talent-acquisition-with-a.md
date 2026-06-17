@@ -7,26 +7,26 @@ image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103e
 type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
   - "AWS Lambda"
-  - "Amazon API Gateway"
   - "AWS IAM"
   - "Amazon CloudWatch"
   - "Amazon S3"
+  - "Amazon API Gateway"
   - "AWS CloudFormation"
 topics:
-  - "enterprise"
-  - "knowledge-bases"
-  - "security"
-contentFormat: "article"
+  - "multi-agent"
+  - "rag"
+  - "content-generation"
 bedrockFeatures:
+  - "Agents"
   - "Knowledge Bases"
   - "Guardrails"
-  - "Agents"
-  - "Embeddings"
+models:
+  - "Claude 3 Haiku"
+  - "Claude 3 Sonnet"
+  - "Titan Embeddings"
 modelProviders:
   - "Anthropic"
   - "Amazon"
-models:
-  - "Claude 3 Haiku"
-  - "Titan Embeddings"
 ---

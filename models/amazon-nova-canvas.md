@@ -5,7 +5,7 @@ specifications:
   description: Nova Canvas is Amazon's image generation model that creates studio-quality images from text and image prompts with built-in controls for watermarking and content moderation.
   provider: Amazon
   modelId: amazon.nova-canvas-v1:0
-  lifecycle: Active
+  lifecycle: Legacy
   launchDate: Dec 3, 2024
   streaming: true
   apisSupported:

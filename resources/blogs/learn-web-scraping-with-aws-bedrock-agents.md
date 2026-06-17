@@ -1,14 +1,15 @@
 ---
 title: "Learn Web Scraping with AWS Bedrock Agents"
-description: "Learn how to build web scraping solutions using AWS Bedrock Agents, which can automate data extraction from websites using AI-powered agents."
+description: "A beginner-friendly guide to set up and deploy AWS Bedrock Agents for web scraping with Lambda, Streamlit, and Anthropic Claude."
 url: https://builder.aws.com/content/2p9uo3VJaGln3USg4oIB4SdPuTd/learn-web-scraping-with-aws-bedrock-agents
 date: ''
-image: "https://builder.aws.com/assets/og-hiXAX-on.png"
+image: "https://assets.community.aws/a/2pANT3KIw8t6ElUEA81Er47VQQa/Bedr.webp?imgSize=1280x720"
+type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "AWS Lambda"
 topics:
   - "tool-use"
-contentFormat: "article"
 bedrockFeatures:
   - "Agents"
 ---

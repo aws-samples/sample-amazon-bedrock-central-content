@@ -8,18 +8,19 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
+  - "Amazon ECS"
   - "AWS Lambda"
   - "AWS CDK"
+  - "Amazon Cognito"
+  - "Amazon OpenSearch Serverless"
 topics:
   - "rag"
   - "knowledge-bases"
-contentFormat: "article"
 bedrockFeatures:
   - "Knowledge Bases"
-  - "Embeddings"
-modelProviders:
-  - "Amazon"
 models:
   - "Nova Lite"
   - "Titan Embeddings"
+modelProviders:
+  - "Amazon"
 ---

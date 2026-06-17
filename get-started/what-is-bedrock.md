@@ -1,6 +1,6 @@
 ---
 headline: "Meet Amazon Bedrock"
-tagline: "The core capabilities you need for building production AI in one platform."
+tagline: "Amazon Bedrock gives you access to hundreds of models from a single service."
 type: "get-started"
 
 pageTitle: "Get Started"

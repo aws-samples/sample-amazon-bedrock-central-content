@@ -16,7 +16,7 @@ topics:
   - "rag"
   - "multimodal"
   - "knowledge-bases"
-contentFormat: "article"
+  - "chatbots"
 bedrockFeatures:
   - "Guardrails"
   - "Knowledge Bases"
@@ -29,4 +29,5 @@ models:
   - "Claude 3 Sonnet"
   - "Claude 3.5 Sonnet"
   - "Titan Embeddings"
+  - "Amazon Nova"
 ---

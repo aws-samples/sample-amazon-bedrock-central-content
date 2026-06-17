@@ -74,10 +74,6 @@ resources:
     - title: AWS Model Card — Jamba 1.5 Large
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-ai21-labs-jamba-1-5-large.html
       type: model-card
-  aws:
-    - title: "AI21 Labs Jamba 1.5 foundation models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/ai21-labs-jamba-1-5-foundation-models-are-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: AI21 Labs Documentation
       url: https://docs.ai21.com/

@@ -40,9 +40,9 @@ intro: "Before you can call any model, Bedrock needs to know who you are."
 introDetail: "In this tutorial we'll use an API key. You can generate one directly in the console and start calling models in under a minute. No AWS CLI setup or IAM configuration needed."
 
 securityNote:
-  summary: "API keys are ideal for exploring Amazon Bedrock."
-  text: "For production workloads, we recommend relying on temporary credentials and applying least-privilege permissions,"
+  summary: "You can use Bedrock API keys to quickly test your setup."
+  text: "For setups that require a higher level of security, we recommend using temporary IAM credentials."
   cta: "see"
-  linkLabel: "Identity and access management for Amazon Bedrock"
-  linkUrl: "https://docs.aws.amazon.com/bedrock/latest/userguide/security-iam.html"
+  linkLabel: "security best practices in IAM for more details"
+  linkUrl: "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html"
 ---

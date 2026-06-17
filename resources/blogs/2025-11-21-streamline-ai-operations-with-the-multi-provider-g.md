@@ -11,6 +11,7 @@ frameworks:
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
+  - "Amazon ECS"
   - "Amazon EKS"
   - "AWS CDK"
   - "AWS CloudFormation"
@@ -21,8 +22,6 @@ topics:
   - "observability"
   - "cost-optimization"
   - "security"
-  - "enterprise"
-contentFormat: "architecture"
 bedrockFeatures:
   - "Guardrails"
 ---

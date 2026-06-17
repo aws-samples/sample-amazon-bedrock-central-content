@@ -26,11 +26,26 @@ specifications:
     - coding
   singleRegions:
     - us-east-1
+    - ap-southeast-4
   crossRegionInference: []
-  crossRegionProfiles:
-    - global
   bedrockFeatures: []
-codeExamples: []
+codeExamples:
+  - title: Messages API
+    language: python
+    code: |
+      # pip install -U "anthropic[bedrock]"
+      # export AWS_BEARER_TOKEN_BEDROCK="<your Bedrock API key>"
+      from anthropic import AnthropicBedrockMantle
+
+      client = AnthropicBedrockMantle(aws_region="us-east-1")
+
+      message = client.messages.create(
+          model="anthropic.claude-mythos-preview",
+          max_tokens=1024,
+          messages=[{"role": "user", "content": "Can you explain the features of Amazon Bedrock?"}],
+      )
+
+      print(message.content[0].text)
 resources:
   documentation:
     - title: AWS Model Card — Claude Mythos Preview

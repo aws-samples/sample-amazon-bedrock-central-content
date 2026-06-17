@@ -1,18 +1,19 @@
 ---
-date: '2025-12-02'
-description: This project is a personalized nutritional app built with a serverless
-  architecture and powered by generative AI technology, including Amazon Bedrock,
-  Anthropic Claude, and AWS services like Lambda, DynamoDB, and S3.
-modelProviders:
-- Anthropic
-- Amazon
-services:
-- Amazon Bedrock
-- AWS Lambda
-- Amazon DynamoDB
-- Amazon S3
-title: Serverless Genai Food Analyzer App
-type: repositories
+title: "Serverless GenAI Food Analyzer App"
+description: "A personalized GenAI nutritional web app for shopping and cooking recipes, built with serverless architecture on AWS using Amazon Bedrock for ingredient analysis and recipe generation."
 url: https://github.com/aws-samples/serverless-genai-food-analyzer-app
+date: '2025-12-02'
+type: "repositories"
+services:
+  - "Amazon Bedrock"
+  - "AWS Lambda"
+  - "Amazon DynamoDB"
+  - "Amazon S3"
+  - "Amazon Cognito"
+  - "AWS CDK"
+modelProviders:
+  - "Anthropic"
+topics:
+  - "multimodal"
+  - "content-generation"
 ---
-

@@ -1,6 +1,6 @@
 ---
 title: "Langfuse"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "langfuse"
 description: "Observe, evaluate, and debug your Amazon Bedrock LLM applications with Langfuse's open-source observability platform."
 date: "2026-03-06"

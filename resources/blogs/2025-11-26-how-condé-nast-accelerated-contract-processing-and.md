@@ -8,14 +8,12 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "AWS Step Functions"
   - "AWS Lambda"
 topics:
   - "rag"
   - "enterprise"
-  - "fine-tuning"
-contentFormat: "article"
 bedrockFeatures:
   - "Knowledge Bases"
 modelProviders:

@@ -10,9 +10,10 @@ services:
 topics:
   - "deployment"
   - "cost-optimization"
-contentFormat: "article"
 bedrockFeatures:
   - "Custom Models"
 modelProviders:
   - "Meta"
+models:
+  - "Llama 3.1"
 ---

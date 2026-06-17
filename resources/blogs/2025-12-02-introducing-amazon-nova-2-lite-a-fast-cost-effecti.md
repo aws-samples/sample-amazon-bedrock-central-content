@@ -5,20 +5,18 @@ url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-2-lite-a-fast-cost
 date: '2025-12-02'
 image: "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/25/Nova-2.png"
 type: "blogs"
-frameworks:
-  - "Strands"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
 topics:
-  - "multimodal"
-  - "tool-use"
-contentFormat: "article"
+  - "cost-optimization"
+  - "code-generation"
+  - "multi-agent"
 bedrockFeatures:
-  - "Cross-Region Inference"
   - "Converse API"
-modelProviders:
-  - "Amazon"
+  - "Cross-Region Inference"
 models:
-  - "Nova 2"
+  - "Nova 2 Lite"
+frameworks:
+  - "Strands"
 ---

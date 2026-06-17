@@ -4,6 +4,7 @@ description: "Deploy secure AI agents using Amazon Bedrock's AgentCore Code Inte
 url: https://aws.amazon.com/blogs/machine-learning/introducing-the-amazon-bedrock-agentcore-code-interpreter/
 date: '2025-08-01'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/08/01/ml-19403-1120x630.jpg"
+type: "blogs"
 frameworks:
   - "Strands"
   - "LangChain"
@@ -16,6 +17,7 @@ services:
   - "AWS IAM"
 topics:
   - "tool-use"
+  - "coding-agents"
   - "security"
   - "deployment"
 modelProviders:

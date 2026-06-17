@@ -80,9 +80,6 @@ resources:
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-meta-llama-3-1-8b-instruct.html
       type: model-card
   aws:
-    - title: "Meta Llama 3.2 models now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/meta-llama-3-2-models-now-available-in-amazon-bedrock/
-      type: blog
     - title: Conversational Interface - Medical Clinic (amazon-bedrock-samples)
       url: https://github.com/aws-samples/amazon-bedrock-samples/blob/main/agents-and-function-calling/open-source-agents/LangChain/00_medibot_V3_prompts.ipynb
       type: code

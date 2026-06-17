@@ -5,21 +5,18 @@ url: https://aws.amazon.com/blogs/aws/amazon-bedrock-adds-fully-managed-open-wei
 date: '2025-12-02'
 image: "https://d2908q01vomqb2.cloudfront.net/da4b9237bacccdf19c0760cab7aec4a8359010b0/2025/11/27/Amazon-Bedrock-Model-Choice-1.png"
 type: "blogs"
-frameworks:
-  - "Strands"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
   - "AWS CloudFormation"
 topics:
-  - "deployment"
-  - "multimodal"
-contentFormat: "article"
+  - "tool-use"
 bedrockFeatures:
   - "Guardrails"
   - "Converse API"
-modelProviders:
-  - "Mistral"
+  - "Model Evaluation"
 models:
-  - "Mistral Large 2"
+  - "Mistral Large"
+frameworks:
+  - "Strands"
 ---

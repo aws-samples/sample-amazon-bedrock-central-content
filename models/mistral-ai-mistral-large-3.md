@@ -7,11 +7,10 @@ specifications:
   modelId: mistral.mistral-large-3-675b-instruct
   lifecycle: Active
   launchDate: Dec 2, 2025
-  contextWindow: 128K tokens
+  contextWindow: 256K tokens
   maxOutputTokens: 32K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -35,6 +34,10 @@ specifications:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-north-1
+    - eu-west-2
     - sa-east-1
     - us-east-1
     - us-east-2
@@ -75,6 +78,17 @@ codeExamples:
               'role': 'user',
               'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
           }]
+      )
+      print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='mistral.mistral-large-3-675b-instruct',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
       )
       print(response)
 resources:

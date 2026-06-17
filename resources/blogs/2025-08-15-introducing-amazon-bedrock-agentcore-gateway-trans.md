@@ -4,6 +4,7 @@ description: "Readers will learn about Amazon Bedrock AgentCore Gateway, a fully
 url: https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-agentcore-gateway-transforming-enterprise-ai-agent-tool-development/
 date: '2025-08-15'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/08/14/ML-19425-image-2-1217x630.jpeg"
+type: "blogs"
 frameworks:
   - "Strands"
   - "LangChain"
@@ -15,6 +16,7 @@ services:
   - "AWS Lambda"
   - "Amazon CloudWatch"
   - "AWS IAM"
+  - "Amazon Cognito"
 topics:
   - "tool-use"
   - "security"

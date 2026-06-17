@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 16K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -36,6 +35,7 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-north-1
     - eu-west-2
     - sa-east-1
@@ -80,15 +80,22 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='moonshotai.kimi-k2.5',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Kimi K2.5
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-5.html
       type: model-card
-  aws:
-    - title: "The Kimi K2 model from Moonshot AI is now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/the-kimi-k2-model-from-moonshot-ai-is-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: "Kimi K2.5 — Hugging Face"
       url: https://huggingface.co/moonshotai/Kimi-K2.5

@@ -8,18 +8,17 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "AWS Lambda"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "Amazon S3"
   - "AWS Step Functions"
   - "Amazon DynamoDB"
   - "Amazon API Gateway"
   - "AWS CDK"
+  - "Amazon Cognito"
 topics:
   - "multimodal"
   - "rag"
-contentFormat: "article"
-bedrockFeatures:
-  - "Embeddings"
+  - "content-generation"
 modelProviders:
   - "Amazon"
 models:

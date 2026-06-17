@@ -8,5 +8,7 @@ type: "videos"
 services:
   - "Amazon Bedrock"
 topics:
+  - "chatbots"
+  - "content-generation"
   - "enterprise"
 ---

@@ -8,10 +8,9 @@ type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
+  - "Amazon Athena"
 topics:
   - "enterprise"
-  - "multimodal"
-contentFormat: "article"
 modelProviders:
   - "Amazon"
 models:

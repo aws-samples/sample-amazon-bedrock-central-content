@@ -8,5 +8,4 @@ type: "videos"
 topics:
   - "streaming"
   - "multi-agent"
-  - "enterprise"
 ---

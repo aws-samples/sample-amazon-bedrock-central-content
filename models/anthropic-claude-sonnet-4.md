@@ -5,7 +5,7 @@ specifications:
   description: Claude Sonnet 4 is Anthropic's balanced model with strong coding and reasoning capabilities, improved instruction following, and extended thinking with tool use.
   provider: Anthropic
   modelId: anthropic.claude-sonnet-4-20250514-v1:0
-  lifecycle: Active
+  lifecycle: Legacy (certain regions)
   launchDate: May 23, 2025
   contextWindow: 200K tokens
   knowledgeCutoff: Mar 2025
@@ -32,12 +32,31 @@ specifications:
     - model-evaluation
     - prompt-optimization
   crossRegionProfiles:
+    - apac
     - eu
     - global
     - us
-  singleRegions: []
+  singleRegions:
+    - ap-east-2
+    - ap-northeast-2
+    - ap-northeast-3
+    - ap-south-1
+    - ap-south-2
+    - ap-southeast-1
+    - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - ap-southeast-5
+    - ap-southeast-7
+    - me-central-1
   crossRegionInference:
     - ap-northeast-1
+    - ap-northeast-2
+    - ap-northeast-3
+    - ap-south-1
+    - ap-south-2
+    - ap-southeast-1
+    - ap-southeast-2
     - eu-central-1
     - eu-north-1
     - eu-south-1
@@ -66,6 +85,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='anthropic.claude-sonnet-4-20250514-v1:0',
           body=json.dumps({
+              'anthropic_version': 'bedrock-2023-05-31',
               'messages': [{'role': 'user',
                   'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024
@@ -124,12 +144,9 @@ resources:
       type: blog
   provider:
     - title: Anthropic Claude Documentation
-      url: https://docs.anthropic.com/en/docs/about-claude/models/all-models
+      url: https://platform.claude.com/docs/en/docs/about-claude/models/all-models
       type: docs
     - title: Claude Model Benchmarks & Evaluation
       url: https://www.anthropic.com/research/evaluating-ai-systems
-      type: docs
-    - title: Claude Reasoning & Cognitive Capabilities
-      url: https://www.anthropic.com/research/reasoning
       type: docs
 ---

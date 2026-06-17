@@ -9,12 +9,12 @@ services:
   - "Amazon Bedrock"
   - "AWS Lambda"
   - "Amazon S3"
+  - "Amazon Lex"
 topics:
   - "voice-agents"
   - "rag"
   - "knowledge-bases"
   - "enterprise"
-contentFormat: "article"
 bedrockFeatures:
   - "Converse API"
   - "Knowledge Bases"
@@ -28,4 +28,5 @@ models:
   - "Nova Pro"
   - "Nova Lite"
   - "Nova Micro"
+  - "Nova Sonic"
 ---

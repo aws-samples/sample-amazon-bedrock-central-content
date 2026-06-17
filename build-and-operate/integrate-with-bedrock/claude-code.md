@@ -1,6 +1,6 @@
 ---
 title: "Claude Code"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "claude-code"
 description: "Set up, build with, and operate Claude Code on Amazon Bedrock — Anthropic's agentic coding tool running on your AWS infrastructure."
 date: "2026-03-06"

@@ -89,6 +89,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='anthropic.claude-opus-4-5-20251101-v1:0',
           body=json.dumps({
+              'anthropic_version': 'bedrock-2023-05-31',
               'messages': [{'role': 'user',
                   'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024

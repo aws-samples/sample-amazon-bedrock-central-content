@@ -4,8 +4,14 @@ description: "This solution allows users to quickly and inexpensively begin prot
 url: https://github.com/aws-samples/aws-bedrock-with-rag-and-react
 date: '2025-12-02'
 type: "repositories"
-frameworks:
-  - "LangChain"
 services:
   - "Amazon Bedrock"
+  - "Amazon Kendra"
+  - "Amazon S3"
+  - "AWS CDK"
+topics:
+  - "rag"
+frameworks:
+  - "LangChain"
+  - "FAISS"
 ---

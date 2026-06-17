@@ -1,16 +1,23 @@
 ---
-title: "Build Intelligent AI Agents with Amazon Bedrock & Strands"
-description: "A hands-on workshop experience demonstrating how to build intelligent AI agents using Amazon Bedrock in combination with the Strands framework."
+title: "Build Intelligent AI Agents with Amazon Bedrock & Strands - My Hands-on Workshop Experience"
+description: "A hands-on technical journey into building autonomous AI agents using Amazon Bedrock and the Strands SDK, covering MCP integration, persistent memory with DynamoDB, Bedrock Guardrails, observability with Langfuse, and multi-agent deployment on Lambda and Fargate."
 url: https://builder.aws.com/content/37CdYPixmOlmWnvdQs6YUEwXFlt/build-intelligent-ai-agents-with-amazon-bedrock-and-strands-my-hands-on-workshop-experience
 date: ''
 image: "https://builder.aws.com/assets/og-hiXAX-on.png"
-frameworks:
-  - "Strands"
+type: "blogs"
 services:
   - "Amazon Bedrock"
+  - "AWS Lambda"
+  - "AWS Fargate"
+  - "Amazon DynamoDB"
 topics:
   - "multi-agent"
-contentFormat: "hands-on"
+  - "observability"
+  - "memory"
 bedrockFeatures:
-  - "Agents"
+  - "Guardrails"
+frameworks:
+  - "Strands"
+  - "MCP"
+  - "Langfuse"
 ---

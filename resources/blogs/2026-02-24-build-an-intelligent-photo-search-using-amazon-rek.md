@@ -12,10 +12,11 @@ services:
   - "Amazon DynamoDB"
   - "AWS Lambda"
   - "Amazon S3"
+  - "Amazon Cognito"
   - "AWS IAM"
 topics:
   - "multimodal"
-contentFormat: "guide"
+  - "search"
 modelProviders:
   - "Anthropic"
 models:

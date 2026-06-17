@@ -1,12 +1,18 @@
 ---
 title: "AWS Bedrock RAG System"
-description: "Learn how to build a RAG (Retrieval-Augmented Generation) system using AWS Bedrock to connect with builders, share solutions, and access content that accelerates development."
+description: "A comprehensive solution for building Retrieval-Augmented Generation applications integrating AWS Bedrock for LLMs and embeddings, OpenSearch Serverless for vector storage, S3 for document storage, and IAM for security."
 url: https://builder.aws.com/content/36YY4Cd5ifiNesJ8oL0oRZAxATB/aws-bedrock-rag-system
 date: ''
 image: "https://builder.aws.com/assets/og-hiXAX-on.png"
 services:
   - "Amazon Bedrock"
+  - "Amazon OpenSearch Serverless"
+  - "Amazon S3"
+  - "AWS IAM"
 topics:
   - "rag"
-contentFormat: "article"
+  - "knowledge-bases"
+bedrockFeatures:
+  - "Embeddings"
+  - "Knowledge Bases"
 ---

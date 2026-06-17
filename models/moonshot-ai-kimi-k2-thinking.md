@@ -7,7 +7,7 @@ specifications:
   modelId: moonshot.kimi-k2-thinking
   lifecycle: Active
   launchDate: Nov 06, 2025
-  contextWindow: 128K tokens
+  contextWindow: 256K tokens
   maxOutputTokens: 16K
   reasoning: true
   streaming: true
@@ -15,7 +15,6 @@ specifications:
     - Invoke
     - Converse
     - Chat Completions
-    - Responses
   endpointsSupported:
     - bedrock-runtime
     - bedrock-mantle
@@ -36,6 +35,10 @@ specifications:
     - ap-northeast-1
     - ap-south-1
     - ap-southeast-2
+    - ap-southeast-3
+    - ap-southeast-4
+    - eu-north-1
+    - eu-west-2
     - sa-east-1
     - us-east-1
     - us-east-2
@@ -78,15 +81,22 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='moonshotai.kimi-k2-thinking',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Kimi K2 Thinking
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-moonshot-ai-kimi-k2-thinking.html
       type: model-card
-  aws:
-    - title: "The Kimi K2 model from Moonshot AI is now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/machine-learning/the-kimi-k2-model-from-moonshot-ai-is-now-available-in-amazon-bedrock/
-      type: blog
   provider:
     - title: "Kimi K2 Thinking — Hugging Face"
       url: https://huggingface.co/moonshotai/Kimi-K2-Thinking

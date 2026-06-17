@@ -11,6 +11,9 @@ topics:
   - "prompt-engineering"
   - "rag"
   - "multimodal"
+frameworks:
+  - "LangChain"
+  - "FAISS"
 bedrockFeatures:
   - "Knowledge Bases"
   - "Agents"

@@ -32,8 +32,11 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-north-1
     - eu-west-2
+    - sa-east-1
+    - us-east-1
     - us-east-2
     - us-west-2
   crossRegionInference: []
@@ -74,6 +77,17 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='qwen.qwen3-coder-480b-a35b-instruct',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — Qwen3 Coder 480B A35B Instruct
@@ -89,8 +103,4 @@ resources:
     - title: Qwen3 Coder Blog
       url: https://qwenlm.github.io/blog/qwen3-coder/
       type: docs
-  aws:
-    - title: "Alibaba Cloud's Qwen3 models are now available in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/alibaba-clouds-qwen3-models-are-now-available-in-amazon-bedrock/
-      type: blog
 ---

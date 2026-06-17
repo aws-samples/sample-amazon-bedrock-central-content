@@ -1,6 +1,6 @@
 ---
 title: "LangChain"
-type: "collection"
+type: "integrate-with-bedrock"
 category: "langchain"
 description: "Use LangChain's orchestration framework with Amazon Bedrock foundation models for chains, agents, and RAG pipelines."
 date: "2026-03-06"

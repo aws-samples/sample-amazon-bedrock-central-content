@@ -4,6 +4,7 @@ description: "This post demonstrates how Swisscom leveraged Amazon Bedrock Agent
 url: https://aws.amazon.com/blogs/machine-learning/how-swisscom-builds-enterprise-agentic-ai-for-customer-support-and-sales-using-amazon-bedrock-agentcore/
 date: '2025-12-11'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/12/11/ML-19847-1120x630.png"
+type: "blogs"
 frameworks:
   - "Strands"
   - "MCP"
@@ -14,8 +15,8 @@ services:
   - "Amazon EKS"
   - "AWS CloudFormation"
 topics:
+  - "multi-agent"
   - "enterprise"
+  - "chatbots"
   - "security"
-  - "memory"
-  - "observability"
 ---

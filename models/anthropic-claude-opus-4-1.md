@@ -5,11 +5,11 @@ specifications:
   description: Claude Opus 4.1 is an upgrade to Anthropic's model with improved coding, reasoning, and agentic task capabilities.
   provider: Anthropic
   modelId: anthropic.claude-opus-4-1-20250805-v1:0
-  lifecycle: Legacy
+  lifecycle: Active
   launchDate: Aug 05, 2025
   contextWindow: 200K tokens
   knowledgeCutoff: Mar 2025
-  maxOutputTokens: 64K
+  maxOutputTokens: 32K
   reasoning: true
   streaming: true
   apisSupported:
@@ -52,6 +52,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='anthropic.claude-opus-4-1-20250805-v1:0',
           body=json.dumps({
+              'anthropic_version': 'bedrock-2023-05-31',
               'messages': [{'role': 'user',
                   'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024

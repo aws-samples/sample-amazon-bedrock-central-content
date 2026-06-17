@@ -1,18 +1,28 @@
 ---
-date: '2025-11-13'
-description: This hands-on workshop introduces how to leverage foundation models (FMs)
-  through Amazon Bedrock, a fully managed service that provides access to FMs from
-  third-party providers and Amazon. Participants will explore common usage patterns
-  for Generative AI, including techniques for generating text and images, creating
-  value for organizations by improving productivity.
-- LangChain
-- FAISS
-modelProviders:
-- Amazon
-services:
-- Amazon Bedrock
-title: Amazon Bedrock Workshop
-type: repositories
+title: "Amazon Bedrock Workshop"
+description: "A hands-on workshop for developers and solution builders introducing how to leverage foundation models through Amazon Bedrock, covering text generation, RAG, agents, model customization, and distributed inference."
 url: https://github.com/aws-samples/amazon-bedrock-workshop
+date: '2025-11-13'
+image: ""
+type: "repositories"
+services:
+  - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
+  - "Amazon OpenSearch Serverless"
+topics:
+  - "rag"
+  - "multi-agent"
+  - "tool-use"
+  - "fine-tuning"
+bedrockFeatures:
+  - "Knowledge Bases"
+  - "Converse API"
+  - "Cross-Region Inference"
+  - "Custom Models"
+  - "Model Distillation"
+modelProviders:
+  - "Anthropic"
+  - "Amazon"
+frameworks:
+  - "Strands"
 ---
-

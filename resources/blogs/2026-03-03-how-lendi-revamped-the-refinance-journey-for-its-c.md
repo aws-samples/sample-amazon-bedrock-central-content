@@ -5,9 +5,6 @@ url: https://aws.amazon.com/blogs/machine-learning/how-lendi-revamped-the-refina
 date: '2026-03-03'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/03/03/ml-19734-1120x630.png"
 type: "blogs"
-frameworks:
-  - "MCP"
-  - "Langfuse"
 services:
   - "Amazon Bedrock"
   - "Amazon Bedrock AgentCore"
@@ -20,10 +17,11 @@ topics:
   - "observability"
   - "enterprise"
   - "deployment"
-contentFormat: "article"
 bedrockFeatures:
   - "Guardrails"
-  - "Agents"
   - "Batch Inference"
   - "Prompt Management"
+frameworks:
+  - "MCP"
+  - "Langfuse"
 ---

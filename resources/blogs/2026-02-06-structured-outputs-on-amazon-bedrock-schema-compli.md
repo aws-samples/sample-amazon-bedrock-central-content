@@ -10,9 +10,11 @@ services:
 topics:
   - "tool-use"
   - "prompt-engineering"
-contentFormat: "article"
+  - "streaming"
 bedrockFeatures:
   - "Converse API"
+  - "Batch Inference"
+  - "Cross-Region Inference"
 modelProviders:
   - "Anthropic"
   - "Mistral"

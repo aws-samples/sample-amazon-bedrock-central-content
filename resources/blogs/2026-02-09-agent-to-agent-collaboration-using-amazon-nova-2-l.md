@@ -14,6 +14,6 @@ topics:
 modelProviders:
   - "Amazon"
 models:
-  - "Nova 2"
+  - "Nova 2 Lite"
   - "Amazon Nova"
 ---

@@ -4,6 +4,7 @@ description: "Build stateful generative AI applications using Amazon Bedrock's S
 url: https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-launches-session-management-apis-for-generative-ai-applications-preview/
 date: '2025-03-25'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/03/25/ml18358-featured-images.png"
+type: "blogs"
 frameworks:
   - "LangGraph"
   - "LangChain"
@@ -13,7 +14,6 @@ services:
   - "AWS IAM"
 topics:
   - "memory"
-  - "observability"
   - "security"
 modelProviders:
   - "Anthropic"

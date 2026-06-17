@@ -48,8 +48,7 @@ codeExamples:
       response = client.invoke_model(
           modelId='writer.palmyra-x4-v1:0',
           body=json.dumps({
-              'messages': [{'role': 'user',
-                  'content': 'Can you explain the features of Amazon Bedrock?'}],
+              'messages': [{ 'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}],
               'max_tokens': 1024
           })
       )
@@ -62,10 +61,12 @@ codeExamples:
       client = boto3.client('bedrock-runtime', region_name='us-east-1')
       response = client.converse(
           modelId='writer.palmyra-x4-v1:0',
-          messages=[{
-              'role': 'user',
-              'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
-          }]
+          messages=[
+              {
+                  'role': 'user',
+                  'content': [{'text': 'Can you explain the features of Amazon Bedrock?'}]
+              }
+          ]
       )
       print(response)
 resources:
@@ -73,12 +74,4 @@ resources:
     - title: AWS Model Card — Palmyra X4
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x4.html
       type: model-card
-  aws:
-    - title: "Introducing Writer Palmyra models in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/introducing-writer-palmyra-models-in-amazon-bedrock/
-      type: blog
-  provider:
-    - title: Writer Palmyra X4
-      url: https://writer.com/llms/palmyra-x4/
-      type: docs
 ---

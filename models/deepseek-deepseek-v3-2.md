@@ -7,12 +7,11 @@ specifications:
   modelId: deepseek.v3.2
   lifecycle: Active
   launchDate: Dec 01, 2025
-  contextWindow: 128K tokens
+  contextWindow: 164K tokens
   knowledgeCutoff: Mar 2025
   maxOutputTokens: 8K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -36,6 +35,7 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-north-1
     - eu-west-2
     - sa-east-1
@@ -80,15 +80,22 @@ codeExamples:
           }]
       )
       print(response)
+  - title: Chat Completions API
+    language: python
+    code: |
+      from openai import OpenAI
+
+      client = OpenAI()
+      response = client.chat.completions.create(
+          model='deepseek.v3.2',
+          messages=[{'role': 'user', 'content': 'Can you explain the features of Amazon Bedrock?'}]
+      )
+      print(response)
 resources:
   documentation:
     - title: AWS Model Card — DeepSeek V3.2
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-deepseek-deepseek-v3-2.html
       type: model-card
-  aws:
-    - title: "DeepSeek-R1 is now available as a fully managed serverless model in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/deepseek-r1-is-now-available-as-a-fully-managed-serverless-model-in-amazon-bedrock/
-      type: blog
   provider:
     - title: DeepSeek Documentation
       url: https://api-docs.deepseek.com/

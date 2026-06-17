@@ -4,6 +4,7 @@ description: "Build AI-driven policy creation system using Amazon Bedrock that t
 url: https://aws.amazon.com/blogs/machine-learning/build-ai-driven-policy-creation-for-vehicle-data-collection-and-automation-using-amazon-bedrock/
 date: '2025-07-14'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/06/18/image-1-1-1236x630.jpg"
+type: "blogs"
 services:
   - "Amazon Bedrock"
 topics:
@@ -13,5 +14,5 @@ topics:
 modelProviders:
   - "Anthropic"
 models:
-  - "Claude 3.5 Haiku"
+  - "Claude 3 Haiku"
 ---

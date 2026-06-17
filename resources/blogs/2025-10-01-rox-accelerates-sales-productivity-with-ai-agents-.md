@@ -4,6 +4,7 @@ description: "This post explains how Rox leverages AI agents powered by Amazon B
 url: https://aws.amazon.com/blogs/machine-learning/rox-accelerates-sales-productivity-with-ai-agents-powered-by-amazon-bedrock/
 date: '2025-10-01'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/09/22/image-1-23-969x630.png"
+type: "blogs"
 services:
   - "Amazon Bedrock"
 topics:
@@ -13,5 +14,5 @@ topics:
 modelProviders:
   - "Anthropic"
 models:
-  - "Claude Sonnet 4.6"
+  - "Claude Sonnet 4"
 ---

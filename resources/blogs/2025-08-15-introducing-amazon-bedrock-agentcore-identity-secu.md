@@ -4,6 +4,7 @@ description: "This post introduces Amazon Bedrock AgentCore Identity, a service 
 url: https://aws.amazon.com/blogs/machine-learning/introducing-amazon-bedrock-agentcore-identity-securing-agentic-ai-at-scale/
 date: '2025-08-15'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/08/14/ML-19464-image-1-1196x630.png"
+type: "blogs"
 frameworks:
   - "Strands"
   - "MCP"
@@ -12,6 +13,7 @@ services:
   - "Amazon Bedrock AgentCore"
   - "Amazon CloudWatch"
   - "AWS IAM"
+  - "Amazon Cognito"
 topics:
   - "security"
   - "enterprise"

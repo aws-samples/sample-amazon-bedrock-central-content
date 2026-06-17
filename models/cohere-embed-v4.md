@@ -71,8 +71,8 @@ codeExamples:
       response = client.invoke_model(
           modelId='cohere.embed-v4:0',
           body=json.dumps({
-              'texts': ['Can you explain the features of Amazon Bedrock?'],
-              'input_type': 'search_query',
+              'texts': ['What are the different services that you offer?'],
+              'input_type': 'search_document',
               'embedding_types': ['float']
           })
       )

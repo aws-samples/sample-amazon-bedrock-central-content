@@ -1,20 +1,13 @@
 ---
-bedrockFeatures:
-- Agents
-date: '2026-02-26'
-description: This video demonstrates how AI agents can detect supply chain disruptions
-  and recommend real-time rebalancing actions, using Amazon Bedrock AgentCore to orchestrate
-  multiple specialized agents for inventory optimization.
-image: https://img.youtube.com/vi/97iYJyHQ7Uw/sddefault.jpg
-services:
-- Amazon Bedrock
-- Amazon Bedrock AgentCore
-title: 'NRF 2026 - AWS Supply Chain Rebalancing: AI Agents Detect Disruptions & Optimize
-  Inventory'
-type: videos
+title: "NRF 2026 - AWS Supply Chain Rebalancing: AI Agents Detect Disruptions & Optimize Inventory"
+description: "This demo showcases Amazon Bedrock AgentCore orchestrating multiple specialized AI agents to detect supply chain disruptions, recommend real-time rebalancing actions, and optimize inventory to reduce costs."
 url: https://www.youtube.com/watch?v=97iYJyHQ7Uw
+date: '2026-02-26'
+image: "https://img.youtube.com/vi/97iYJyHQ7Uw/maxresdefault.jpg"
+type: "videos"
+services:
+  - "Amazon Bedrock AgentCore"
 topics:
   - "multi-agent"
   - "enterprise"
 ---
-

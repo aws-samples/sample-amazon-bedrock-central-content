@@ -4,10 +4,12 @@ description: "Build a multi-agent network operations assistant using Amazon Bedr
 url: https://aws.amazon.com/blogs/machine-learning/transforming-network-operations-with-ai-how-swisscom-built-a-network-assistant-using-amazon-bedrock/
 date: '2025-07-03'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/07/03/feature-image-ML-18876-1120x630.jpg"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
   - "AWS Lambda"
+  - "Amazon Athena"
   - "AWS CloudFormation"
 topics:
   - "rag"

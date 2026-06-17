@@ -16,16 +16,12 @@ services:
   - "Amazon CloudWatch"
   - "AWS Lambda"
   - "Amazon API Gateway"
+  - "Amazon Cognito"
 topics:
   - "enterprise"
   - "multi-agent"
   - "observability"
   - "security"
-  - "evaluation"
-  - "tool-use"
-  - "memory"
-bedrockFeatures:
-  - "Agents"
 modelProviders:
   - "Anthropic"
 models:

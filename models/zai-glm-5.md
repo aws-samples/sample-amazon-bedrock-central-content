@@ -11,7 +11,6 @@ specifications:
   maxOutputTokens: 128K
   streaming: true
   apisSupported:
-    - Responses
     - Chat Completions
     - Invoke
     - Converse
@@ -34,6 +33,7 @@ specifications:
     - ap-south-1
     - ap-southeast-2
     - ap-southeast-3
+    - ap-southeast-4
     - eu-north-1
     - eu-west-2
     - sa-east-1
@@ -48,17 +48,6 @@ specifications:
   pricingTier: "$$$"
   pricingUnit: "token"
 codeExamples:
-  - title: Responses API
-    language: python
-    code: |
-      from openai import OpenAI
-
-      client = OpenAI()
-      response = client.responses.create(
-          model='zai.glm-5',
-          input='Can you explain the features of Amazon Bedrock?'
-      )
-      print(response)
   - title: Chat Completions API
     language: python
     code: |
@@ -105,10 +94,6 @@ resources:
     - title: AWS Model Card — GLM 5
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-zai-glm-5.html
       type: model-card
-  aws:
-    - title: "Amazon Bedrock now supports Zhipu AI models"
-      url: https://aws.amazon.com/about-aws/whats-new/2025/04/amazon-bedrock-zhipu-ai-models/
-      type: whats-new
   provider:
     - title: Z.AI GLM-5 Documentation
       url: https://docs.z.ai/guides/llm/glm-5

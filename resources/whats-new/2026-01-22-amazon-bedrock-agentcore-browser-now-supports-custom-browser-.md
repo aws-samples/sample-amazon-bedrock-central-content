@@ -4,5 +4,7 @@ description: "Amazon Bedrock AgentCore Browser now supports custom browser exten
 url: https://aws.amazon.com/about-aws/whats-new/2026/01/amazon-bedrock-agentcore-browser-custom-extensions
 date: '2026-01-22'
 services:
-- Amazon Bedrock
+  - "Amazon Bedrock"
+  - "Amazon Bedrock AgentCore"
+  - "Amazon S3"
 ---

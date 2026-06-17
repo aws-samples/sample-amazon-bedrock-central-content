@@ -73,12 +73,4 @@ resources:
     - title: AWS Model Card — Palmyra X5
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-writer-palmyra-x5.html
       type: model-card
-  aws:
-    - title: "Introducing Writer Palmyra models in Amazon Bedrock"
-      url: https://aws.amazon.com/blogs/aws/introducing-writer-palmyra-models-in-amazon-bedrock/
-      type: blog
-  provider:
-    - title: Writer Palmyra X5
-      url: https://writer.com/llms/palmyra-x5/
-      type: docs
 ---

@@ -9,17 +9,17 @@ services:
   - "Amazon Bedrock"
   - "Amazon OpenSearch"
   - "Amazon S3"
-  - "AWS IAM"
 topics:
   - "multimodal"
-  - "enterprise"
-contentFormat: "guide"
+  - "search"
 bedrockFeatures:
   - "Embeddings"
   - "Converse API"
-modelProviders:
-  - "Amazon"
 models:
   - "Nova Pro"
-  - "Nova 2"
+  - "Nova 2 Lite"
+modelProviders:
+  - "Amazon"
+frameworks:
+  - "FAISS"
 ---

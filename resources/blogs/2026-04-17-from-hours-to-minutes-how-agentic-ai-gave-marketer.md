@@ -5,15 +5,13 @@ url: https://aws.amazon.com/blogs/machine-learning/from-hours-to-minutes-how-age
 date: '2026-04-17'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2026/04/16/ML-20552-image-1.png"
 type: "blogs"
-frameworks:
-  - "MCP"
 services:
   - "Amazon Bedrock"
 topics:
   - "multi-agent"
-  - "tool-use"
-  - "enterprise"
-contentFormat: "article"
+  - "content-generation"
+frameworks:
+  - "MCP"
 modelProviders:
   - "Anthropic"
   - "Amazon"

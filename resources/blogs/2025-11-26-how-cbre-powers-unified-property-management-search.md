@@ -14,15 +14,12 @@ services:
 topics:
   - "rag"
   - "enterprise"
-  - "multimodal"
-contentFormat: "article"
-bedrockFeatures:
-  - "Embeddings"
+  - "search"
 modelProviders:
   - "Amazon"
   - "Anthropic"
 models:
   - "Nova Pro"
-  - "Claude 3.5 Haiku"
+  - "Claude 3 Haiku"
   - "Titan Embeddings"
 ---

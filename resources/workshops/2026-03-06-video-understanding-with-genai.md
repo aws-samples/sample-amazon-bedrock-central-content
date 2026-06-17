@@ -7,8 +7,10 @@ image: "/images/aws-logo_2.svg"
 type: "workshops"
 services:
   - "Amazon Bedrock"
+  - "Amazon OpenSearch Serverless"
+  - "Amazon S3"
 topics:
   - "multimodal"
-modelProviders:
-  - "Amazon"
+models:
+  - "Amazon Nova"
 ---

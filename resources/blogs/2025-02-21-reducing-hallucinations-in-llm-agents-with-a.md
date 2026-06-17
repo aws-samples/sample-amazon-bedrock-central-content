@@ -4,10 +4,11 @@ description: "Build a verified semantic cache system using Amazon Bedrock Knowle
 url: https://aws.amazon.com/blogs/machine-learning/reducing-hallucinations-in-llm-agents-with-a-verified-semantic-cache-using-amazon-bedrock-knowledge-bases/
 date: '2025-02-21'
 image: "https://d2908q01vomqb2.cloudfront.net/f1f836cb4ea6efb2a0b1b99f41ad8b103eff4b59/2025/02/14/reducinghallucinations-1120x630.png"
+type: "blogs"
 services:
   - "Amazon Bedrock"
   - "Amazon S3"
-  - "Amazon OpenSearch"
+  - "Amazon OpenSearch Serverless"
   - "AWS Lambda"
 topics:
   - "rag"

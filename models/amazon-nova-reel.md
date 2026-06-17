@@ -5,7 +5,7 @@ specifications:
   description: Nova Reel is Amazon's video generation model that creates short videos from text and image prompts with camera motion controls.
   provider: Amazon
   modelId: amazon.nova-reel-v1:0
-  lifecycle: Active
+  lifecycle: Legacy
   launchDate: Dec 3, 2024
   streaming: true
   apisSupported:
@@ -48,13 +48,6 @@ resources:
     - title: AWS Model Card — Nova Reel
       url: https://docs.aws.amazon.com/bedrock/latest/userguide/model-card-amazon-nova-reel.html
       type: model-card
-  aws:
-    - title: "Amazon Nova Reel guide: Advanced techniques for video generation"
-      url: https://aws.amazon.com/blogs/machine-learning/amazon-nova-reel-guide-advanced-techniques-for-video-generation/
-      type: blog
-    - title: "Introducing Amazon Nova Canvas and Amazon Nova Reel"
-      url: https://aws.amazon.com/blogs/aws/introducing-amazon-nova-canvas-and-amazon-nova-reel-for-visual-content-creation/
-      type: blog
   provider:
     - title: Amazon Nova User Guide
       url: https://docs.aws.amazon.com/nova/latest/userguide/

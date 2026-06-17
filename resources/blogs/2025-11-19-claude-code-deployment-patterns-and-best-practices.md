@@ -9,13 +9,15 @@ services:
   - "Amazon Bedrock"
 topics:
   - "deployment"
-  - "security"
-  - "observability"
   - "coding-agents"
-  - "enterprise"
-contentFormat: "article"
+  - "observability"
+  - "security"
 modelProviders:
   - "Anthropic"
+models:
+  - "Claude Sonnet 4"
+bedrockFeatures:
+  - "Cross-Region Inference"
 developerTools:
   - "Claude Code"
 ---
