@@ -1,11 +1,16 @@
-## My Project
+## Content for Amazon Bedrock Central
 
-TODO: Fill this README out!
+🌐 **[Amazon Bedrock Central](https://aws-samples.github.io/sample-amazon-bedrock-central/)** is a comprehensive, searchable resource hub for building with [Amazon Bedrock](https://aws.amazon.com/bedrock/).
 
-Be sure to:
+It aggregates a wide, curated range of resources including learning materials, design patterns, reference architectures, and frameworks for building AI solutions on AWS.
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## Contributing
+
+This repository contains the static, community-led content for Amazon Bedrock Central - and contributions are welcome!
+
+If you'd like to suggest content or updates that already fits in the taxonomy here, feel free to **open a pull request**.
+
+To discuss bigger changes, please **open an issue** first: We'd hate for your time to be wasted!
 
 ## Security
 
@@ -14,4 +19,3 @@ See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more inform
 ## License
 
 This library is licensed under the MIT-0 License. See the LICENSE file.
-
